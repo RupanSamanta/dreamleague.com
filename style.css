@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 @font-face  {
-    font-family: 'R';
-    src: url('assests/Renogare-Regular.otf');
+    font-family: 'Light';
+    src: url('assests/fonts/Radikal Light.otf');
+}
+@font-face  {
+    font-family: 'Medium';
+    src: url('assests/fonts/Radikal Medium.otf');
+}
+@font-face  {
+    font-family: 'Bold';
+    src: url('assests/fonts/Radikal Bold.otf');
+}
+@font-face  {
+    font-family: 'Black';
+    src: url('assests/fonts/Radikal Black.otf');
 }
 :root {
     --blue: #04f5ff;
@@ -12,17 +23,24 @@
     --yellow: #eaff04;
     --grey: rgba(0,0,0,0.1);
 }
+::selection {
+    background: var(--pink);
+    color: #fff;
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: solid 0 aqua;
 }
+img {
+    user-select: none;
+}
 body {
     margin: 0;
     background: #fff;
     font-family: 'Nunito', sans-serif;
-    font-family: 'R';
+    font-family: 'Medium';
 }
 header {
     display: flex;
@@ -43,8 +61,8 @@ header img {
     height: auto;
 }
 header #cup-name{
-    font-size: 20px;
-    font-weight: 20;
+    font-size: 18px;
+    font-family: 'Bold';
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +78,8 @@ header i {
     justify-content: center; 
     align-items: center;
     padding: 20px;
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'Bold';
 }
 #logo-banner img {
     width: 150px;
@@ -72,13 +91,14 @@ header i {
 }
 .violet-border div {
     width: calc(100% - 15px);
-    height: 10px;
+    height: 7px;
     background: linear-gradient(to right, var(--violet), var(--pink));
     margin: 0 auto;
 }
 .heading {
     font-size: 18px;
     padding: 15px 10px;
+    font-family: 'Bold';
     border-bottom: solid 5px var(--grey);
 }
 .teams-box {
@@ -111,7 +131,7 @@ header i {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
 }
 .match {
     width: 380px;
@@ -124,6 +144,7 @@ header i {
 .match:hover {
     --lg: #fff;
     background: linear-gradient(to bottom right, var(--blue), var(--violet));
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
     color: #fff;
 }
 .match div {
@@ -152,30 +173,41 @@ header i {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 .news {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-size: 14px;
+    border-bottom: solid 1px var(--grey);
+    padding: 20px 0;
 }
-.news div {
+.news div:last-child {
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    font-family: 'Light';
 }
-.news img {
-    width: 170px;
-    height: auto;
-    margin: 10px;
+.news div.image-box {
+    width: 200px !important;
+    height: 120px;
+    margin-right: 10px;
+    background: rgba(0,0,0,0.05);
+    background-size: 100% auto !important;
+    background-position: center top;
+    border: none;
+    outline: none;
 }
 .news #headline {
     font-size: 12px;
     color: var(--pink);
     margin: 5px 0;
+    font-family: 'Medium';
 }
 footer {
     padding: 10px 5px;
@@ -183,8 +215,9 @@ footer {
     color: #fff;
 }
 footer .title {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 5px;
+    font-family: 'Bold';
 }
 footer .content-box {
     display: flex;
@@ -215,6 +248,7 @@ footer .content-box {
     padding: 10px;
     font-size: 15px;
     color: #fff;
+    font-family: 'Bold';
 }
 #footer-logo img {
     width: 50px;
