@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face  {
+    font-family: 'R';
+    src: url('assests/Renogare-Regular.otf');
+}
 :root {
     --blue: #04f5ff;
     --pink: #e90052;
@@ -6,17 +10,213 @@
     --purple: #38003c;
     --violet: #a400ff;
     --yellow: #eaff04;
+    --grey: rgba(0,0,0,0.1);
 }
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: solid 0 aqua;
 }
 body {
     margin: 0;
     background: #fff;
     font-family: 'Nunito', sans-serif;
+    font-family: 'R';
 }
 header {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 5px;
+    background: var(--purple);
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.25);
+}
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+header img {
+    width: 50px;
+    height: auto;
+}
+header #cup-name{
+    font-size: 20px;
+    font-weight: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+header i {
+    font-size: 25px;
+    margin: 10px;
+}
+#logo-banner {
+    background: linear-gradient(to bottom right, var(--green), var(--blue));
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    font-size: 40px;
+}
+#logo-banner img {
+    width: 150px;
+    height: auto;
+}
+.violet-border {
+    padding: 20px 0 0 0;
+    background: var(--purple);
+}
+.violet-border div {
+    width: calc(100% - 15px);
+    height: 10px;
+    background: linear-gradient(to right, var(--violet), var(--pink));
+    margin: 0 auto;
+}
+.heading {
+    font-size: 18px;
+    padding: 15px 10px;
+    border-bottom: solid 5px var(--grey);
+}
+.teams-box {
+    padding: 10px;
+}
+.team {
+    padding: 8px;
+    border-bottom: solid 1px var(--grey);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.team img {
+    width: 45px;
+    height: auto;
+    margin: 5px 10px;
+}
+.team div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.team #stadium {
+    font-size: 12px;
+    color: gray;
+}
+.match-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.match {
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    --lg: lightgrey;
+    border-bottom: solid 1px var(--grey);
+}
+.match:hover {
+    --lg: #fff;
+    background: linear-gradient(to bottom right, var(--blue), var(--violet));
+    color: #fff;
+}
+.match div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px auto;
+}
+.match div:last-child {
+    font-size: 12px;
+}
+.match #v {
+    background: #fff;
+    padding: 7px 30px;
+    color: black;
+    border: solid 1px var(--lg);
+}
+.match img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+.news-box {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.news {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.news div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.news img {
+    width: 170px;
+    height: auto;
+    margin: 10px;
+}
+.news #headline {
+    font-size: 12px;
+    color: var(--pink);
+    margin: 5px 0;
+}
+footer {
+    padding: 10px 5px;
+    background: var(--purple);
+    color: #fff;
+}
+footer .title {
+    font-size: 20px;
+    margin: 10px 5px;
+}
+footer .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content-box .content {
+    width: 230px;
+    color: lightgray;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px 0;
+}
+.content:hover {
+    color: var(--pink);
+}
+.hr {
+    width: calc(100% - 5px);
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 5px auto;
+}
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+#footer-logo img {
+    width: 50px;
+    height: 50px;
 }
