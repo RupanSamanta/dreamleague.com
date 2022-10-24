@@ -8,7 +8,7 @@ var rsfootballclub = {
 annihilation = {
     name: 'Annihilation',
     shortName: 'ANN',
-    stadium: 'Vasio Club',
+    stadium: 'Vasio Stadium',
     stadiumCapacity: 35519,
     src: 'assests/team/anh.png'
 },
