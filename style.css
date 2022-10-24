@@ -315,3 +315,16 @@ footer .content-box {
 #powered-by img:first-child {
     width: 150px;
 }
+
+.view-more {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.view-more button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Light';
+    font-size: 12px;
+}
