@@ -1,6 +1,13 @@
 var header = document.getElementsByTagName('header')[0], banner = document.getElementById('logo-banner'),
 match_box = document.getElementsByClassName('match-box')[0],
-team_box = document.getElementsByClassName('teams-box')[0];
+team_box = document.getElementsByClassName('teams-box')[0],
+ctn = document.getElementsByClassName('content'),
+links = [
+    '../index.html',
+    '../fixtures/index.html',
+    '../fixtures/index.html',
+    '../stats/index.html'
+]
 
 window.onscroll = function () {
     if (window.pageYOffset >= header.offsetTop) {
@@ -11,8 +18,7 @@ window.onscroll = function () {
         header.classList.remove('sticky');
     }
 }
-
-function generateMatch(m, no, team1, team2) {
+function generateMatch(m, no, team1, team2, ext) {
     var match = document.createElement('div'),
     div = document.createElement('div');
     match.className = 'match';
@@ -20,11 +26,17 @@ function generateMatch(m, no, team1, team2) {
     match.appendChild(div);
     div = document.createElement('div');
     div.innerHTML = '<span>'+team1.shortName+'</span>';
-    div.innerHTML += '<img src="'+team1.src+'">';
+    if (ext)
+        div.innerHTML += '<img src="../'+team1.src+'">';
+    else 
+        div.innerHTML += '<img src="'+team1.src+'">';
     div.innerHTML += `<p id="verses">
         <span></span><span>V</span><span></span>
     </p>`;
-    div.innerHTML += '<img src="'+team2.src+'">';
+    if (ext)
+        div.innerHTML += '<img src="../'+team2.src+'">';
+    else 
+        div.innerHTML += '<img src="'+team2.src+'">';
     div.innerHTML +='<span>'+team2.shortName+'</span>';
     match.appendChild(div);
     div = document.createElement('div');
@@ -32,10 +44,6 @@ function generateMatch(m, no, team1, team2) {
     div.innerHTML = team1.stadium;
     match.appendChild(div);
     m.appendChild(match);
-}
-
-for (let i=0; i<3; i++) {
-    generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1]);
 }
 
 function displayTeams(team) {
@@ -56,6 +64,9 @@ function displayTeams(team) {
     box.className = 'team';
     team_box.appendChild(box);
 }
-for (let i=0; i<teams.length; i++) {
-    displayTeams(teams[i]);
+
+for (let i = 0; i < ctn.length; i++) {
+    ctn[i].addEventListener('click', function () {
+        window.open(links[i])
+    });
 }
