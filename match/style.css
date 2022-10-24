@@ -1,0 +1,269 @@
+.stadium-banner {
+    background-position: center center !important;
+    background-size: 100% auto !important;
+    padding-bottom: 160px;
+    background: var(--purple);
+}
+.stadium-banner div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Light';
+    font-size: 12px;
+    color: #fff;
+    background: rgba(56, 0, 60, 0.8);
+    padding: 12px 10px;
+}
+#match-section {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent, rgba(56, 0, 60, 0.8), var(--purple), var(--purple), var(--purple));
+    margin-top: -120px;
+}
+#match-section #ft {
+    width: 150px;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Medium';
+    font-size: 16px;
+    color: black;
+    background: #fff;
+}
+#match-section #logo-score {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#logo-score #logo {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo-score #logo img {
+    width: 50px;
+    height: 50px;
+}
+#logo-score #name {
+    width: 70px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+    color: #fff;
+    font-family: 'Medium';
+    font-size: 17px;
+}
+#logo-score #score {
+    width: 100px;
+    height: 55px;
+    background: var(--pink);
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#logo-score #score span {
+    width: 30%;
+    height: fit-content;
+    display: block;
+    border: solid 0 aqua;
+    text-align: center;
+    transform: translateY(5px);
+}
+#logo-score #score span:nth-child(2) {
+    width: 10%;
+    font-family: 'Light';
+    font-size: 25px;
+    margin: 0 5px;
+}
+.timeline {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 5px;
+    margin: 5px auto;
+}
+.timeline p {
+    width: 33%;
+    display: block;
+    margin: 0 5px;
+    font-size: 12px;
+    font-family: 'Light';
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.timeline p:nth-child(2) {
+    width: 10%;
+    align-items: center;
+}
+.timeline p:last-child {
+    align-items: flex-start;
+}
+.timeline img {
+    width: 15px;
+    height: 15px;
+}
+#other {
+   color: #fff; 
+}
+#assists {
+    color: darkgray;
+}
+#stats-lineup #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+}
+#buttons button {
+    width: 110px;
+    border-radius: 5px 5px 0 0;
+    color: gray;
+    background: lightgrey;
+    outline: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Medium';
+    margin: 10px 5px 0 0 ;
+}
+#buttons button:disabled {
+    background: #fff;
+    color: black;
+}
+#potm {
+    background: linear-gradient(to right, var(--violet), var(--pink));
+    border-radius: 5px;
+    width: 380px;
+    padding: 20px;
+    margin: 40px auto;
+}
+#potm #name {
+    margin: 10px auto;
+    color: #fff;
+    font-family: 'Medium';
+    text-align: center;
+    text-transform: uppercase;
+}
+#potm #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Medium';
+    color: #fff;
+    margin-bottom: 10px;
+}
+#potm #logo img {
+    width: 35px;
+    height: auto;
+}
+#potm #name {
+    margin: 5px auto;
+}
+#potm #name div:first-child {
+    font-size: 20px;
+}
+#potm #name div:last-child {
+    font-size: 35px;
+    font-family: 'Bold';
+    margin-top: -5px;
+}
+#player-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#player-img img {
+    width: auto;
+    height: 200px;
+    min-height: 200px;
+}
+#player-img div {
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Bold';
+    color: #fff;
+    text-transform: uppercase;
+}
+#player-img p {
+    width: 280px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    border-radius: 50%;
+}
+#lineups {
+    padding: 20px;
+    margin: 10px auto;
+    display: none;
+}
+#lineups #team-logo {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+}
+#lineups #team-logo img {
+    width: 50px;
+    height: auto;
+}
+#lineups #field {
+    width: 380px;
+    height: 560px;
+    background: url("lineup-pitch.jpg");
+    background-size: 100% auto !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#stats-lineup #stats {
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    display: none;
+}
+#stats-lineup #stats table {
+    width: 380px;
+    height: auto;
+    border-collapse: collapse;
+}
+#stats-lineup #stats td {
+    width: 33%;
+    padding: 15px 0;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Light';
+    border-bottom: solid 1px var(--grey);
+}
+#stats-lineup #stats td:nth-child(2) {
+    font-family: 'Medium';
+}
+#stats-lineup #stats tr:nth-child(1) td {
+    border-width: 3px;
+}
+#stats-lineup #stats img {
+    width: 50px;
+    height: auto;
+}
+#stats-lineup #stats tr:nth-child(n+2):hover {
+    background: linear-gradient(to right, transparent, var(--grey), var(--grey), transparent);
+}
