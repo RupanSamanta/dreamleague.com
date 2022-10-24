@@ -67,6 +67,6 @@ function displayTeams(team) {
 
 for (let i = 0; i < ctn.length; i++) {
     ctn[i].addEventListener('click', function () {
-        window.open(links[i])
+        window.open(links[i], '_self');
     });
 }
