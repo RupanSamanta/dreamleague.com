@@ -24,7 +24,7 @@
         </div>
     </header>
     <main>
-        <section id="logo-banner">
+        <section class="logo-banner" id="logo-banner">
             <div>
                 <img src="assests/cup-logo-black.png" alt="">
             </div>
@@ -116,6 +116,14 @@
     </footer>
 </body>
 <script src="assests/team/team.js"></script>
-<script src="fixtures-results.js"></script>
+<script src="fixtures/fixtures-results.js"></script>
 <script src="script.js"></script>
+<script>
+    for (let i=0; i<3; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], false);
+    }
+    for (let i=0; i<teams.length; i++) {
+        displayTeams(teams[i]);
+    }
+</script>
 </html>
