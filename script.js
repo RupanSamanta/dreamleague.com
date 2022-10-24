@@ -3,10 +3,10 @@ match_box = document.getElementsByClassName('match-box')[0],
 team_box = document.getElementsByClassName('teams-box')[0],
 ctn = document.getElementsByClassName('content'),
 links = [
-    '../index.html',
-    '../fixtures/index.html',
-    '../fixtures/index.html',
-    '../stats/index.html'
+    'https://rupansamanta.github.io/dreamleague.com/',
+    'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
+    'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
+    'https://rupansamanta.github.io/dreamleague.com/stats/'
 ]
 
 window.onscroll = function () {
