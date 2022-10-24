@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Rupan Samanta">
+    <meta name="description" content="Dream League - A Friendly Tournament">
+    <meta name="keywords" content="dls 22, dls cup">
+    <meta name="theme-color" content="#38003c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="UTF-8">
+    <title>Dream League - Fixtures and Results</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/82872eeccd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../assests/cup-logo-white.png" alt="">
+            <div id="cup-name">
+                <span>Dream</span>
+                <span>League</span>
+            </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="site-heading" id="logo-banner">
+            Fixtures and Results
+        </section>
+        <section>
+            <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Fixtures</div>
+            <div class="match-box"></div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="title">Dream League</div>
+            <div class="content-box">
+                <div class="content">Home</div>
+                <div class="content">Fixtures</div>
+                <div class="content">Results</div>
+                <div class="content">Stats</div>
+            </div>
+        </section>
+        <div class="hr"></div>
+        <section id="footer-logo">
+            <div>Dream</div>
+            <img src="../assests/cup-logo-white.png" alt="">
+            <div>League</div>
+        </section>
+    </footer>
+</body>
+<script src="../assests/team/team.js"></script>
+<script src="../fixtures/fixtures-results.js"></script>
+<script src="../script.js"></script>
+<script>
+    for (let i=0; i<fixtures.length; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], true);
+    }
+</script>
+</html>
