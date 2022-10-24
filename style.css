@@ -49,15 +49,20 @@ header {
     padding: 10px 5px;
     background: var(--purple);
     color: #fff;
-    box-shadow: 0 0 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5) !important;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 header div {
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
 header img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 header #cup-name{
@@ -136,8 +141,8 @@ header i {
 .match {
     width: 380px;
     height: auto;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 10px auto;
+    padding: 15px;
     --lg: lightgrey;
     border-bottom: solid 1px var(--grey);
 }
@@ -157,11 +162,31 @@ header i {
 .match div:last-child {
     font-size: 12px;
 }
-.match #v {
+.match #verses {
     background: #fff;
-    padding: 7px 30px;
+    width: 80px;
+    padding: 7px 5px;
     color: black;
     border: solid 1px var(--lg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#verses span, #done span{
+    width: 25px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.match #done {
+    background: var(--purple);
+    width: 80px;
+    padding: 7px 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
 }
 .match img {
     width: 40px;
@@ -199,9 +224,13 @@ header i {
     margin-right: 10px;
     background: rgba(0,0,0,0.05);
     background-size: 100% auto !important;
-    background-position: center top;
+    transition: background-size 0.5s ease;
+    background-position: center center !important;
     border: none;
     outline: none;
+}
+.news:hover div.image-box {
+    background-size: 110% auto !important;
 }
 .news #headline {
     font-size: 12px;
@@ -229,8 +258,10 @@ footer .content-box {
     width: 230px;
     color: lightgray;
     font-size: 15px;
+    font-family: 'Medium';
     padding: 5px;
     margin: 5px 0;
+    transition: color 0.3s ease;
 }
 .content:hover {
     color: var(--pink);
@@ -253,4 +284,24 @@ footer .content-box {
 #footer-logo img {
     width: 50px;
     height: 50px;
+}
+#powered-by {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#powered-by div {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+#powered-by img {
+    width: 120px;
+    height: auto;
+    margin: 20px 15px;
+}
+#powered-by img:first-child {
+    width: 150px;
 }
