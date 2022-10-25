@@ -90,6 +90,74 @@ function displaySponsor(range) {
     }
 }
 
+
+function displayTable(teamList, range) {
+    var tableBox = document.getElementsByClassName('table-box')[0],
+    table = document.createElement('table'),
+    tr = document.createElement('tr'),
+    th, td, arr = ['Pos', 'Club', 'P', 'W', 'T', 'L', 'GF', 'GC', 'GD', 'Pts'];
+    for (let i=0; i<arr.length; i++) {
+        th = document.createElement('th');
+        th.innerHTML = arr[i];
+        tr.appendChild(th);
+    }
+    table.appendChild(tr);
+    for (let i = 0; i < teamList.length; i++) {
+        tr = document.createElement('tr');
+        td = document.createElement('td');
+        td.innerHTML = i+1;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        var str = '';
+        for (let i=0; i<range; i++)
+            str += '../';
+        td.innerHTML = 
+            `<p>
+                <img src="`+str+teamList[i].src+`">
+                <span>`+teamList[i].shortName+`</span>
+             </p>`;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].played;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].win;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].tie;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].lose;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].gf;
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].gc;
+        tr.appendChild(td);
+                
+        td = document.createElement('td');
+        var gd = teamList[i].gf - teamList[i].gc;
+        td.innerHTML = gd>0 ? '+'+gd : gd<0 ? '-'+gd : 0;
+        tr.appendChild(td);
+                
+        td = document.createElement('td');
+        td.innerHTML = teamList[i].win*3 + teamList[i].tie;
+        tr.appendChild(td);
+        
+        table.appendChild(tr);
+    }
+    tableBox.appendChild(table);
+}
+
+
 for (let i = 0; i < ctn.length; i++) {
     ctn[i].addEventListener('click', function () {
         window.open(links[i], '_self');
