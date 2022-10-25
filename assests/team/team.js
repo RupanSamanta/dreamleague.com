@@ -9,7 +9,11 @@ var rsfootballclub = {
     total_tie: 0, tie: 0,
     total_lose: 0, lose: 0,
     total_gf: 0, gf: 0,
-    total_gc: 0, gc: 0
+    total_gc: 0, gc: 0,
+    total_possession: 0, possession: 0, 
+    total_shot: 0, shot: 0,
+    total_shotTarget: 0, shotTarget: 0,
+    total_cleansheet: 0, cleansheet: 0,
 },
 annihilation = {
     name: 'Annihilation',
@@ -22,7 +26,11 @@ annihilation = {
     total_tie: 0, tie: 0,
     total_lose: 0, lose: 0,
     total_gf: 0, gf: 0,
-    total_gc: 0, gc: 0
+    total_gc: 0, gc: 0,
+    total_possession: 0, possession: 0, 
+    total_shot: 0, shot: 0,
+    total_shotTarget: 0, shotTarget: 0,
+    total_cleansheet: 0, cleansheet: 0
 },
 ssfc = {
     name: 'SSFC',
@@ -35,11 +43,33 @@ ssfc = {
     total_tie: 0, tie: 0,
     total_lose: 0, lose: 0,
     total_gf: 0, gf: 0,
-    total_gc: 0, gc: 0
-};
+    total_gc: 0, gc: 0,
+    total_possession: 0, possession: 0, 
+    total_shot: 0, shot: 0,
+    total_shotTarget: 0, shotTarget: 0,
+    total_cleansheet: 0, cleansheet: 0
+},
+krishfc = {
+    name: 'Krish FC',
+    shortName: 'KFC',
+    stadium: 'Krish Stadium',
+    stadiumCapacity: 92632,
+    src: 'assests/team/kfc.png',
+    match: 0, played: 0,
+    total_win: 0, win: 0,
+    total_tie: 0, tie: 0,
+    total_lose: 0, lose: 0,
+    total_gf: 0, gf: 0,
+    total_gc: 0, gc: 0,
+    total_possession: 0, possession: 0, 
+    total_shot: 0, shot: 0,
+    total_shotTarget: 0, shotTarget: 0,
+    total_cleansheet: 0, cleansheet: 0
+}
+;
 
 const teams = [
-    rsfootballclub, annihilation, ssfc
+    rsfootballclub, annihilation, ssfc, krishfc
 ];
 for (let i = 0; i < teams.length; i++) {
    for (let j = 0; j < teams.length; j++) {
