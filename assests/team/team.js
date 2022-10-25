@@ -1,23 +1,41 @@
 var rsfootballclub = {
     name: 'RS Football Club',
-    shortName: 'RSFC',
+    shortName: 'RFC',
     stadium: 'RS City Stadium',
     stadiumCapacity: 92632,
-    src: 'assests/team/rsfc.png'
+    src: 'assests/team/rsfc.png',
+    match: 0, played: 0,
+    total_win: 0, win: 0,
+    total_tie: 0, tie: 0,
+    total_lose: 0, lose: 0,
+    total_gf: 0, gf: 0,
+    total_gc: 0, gc: 0
 },
 annihilation = {
     name: 'Annihilation',
     shortName: 'ANN',
-    stadium: 'Vasio Stadium',
+    stadium: 'Vasio Club',
     stadiumCapacity: 35519,
-    src: 'assests/team/anh.png'
+    src: 'assests/team/anh.png',
+    match: 0, played: 0,
+    total_win: 0, win: 0,
+    total_tie: 0, tie: 0,
+    total_lose: 0, lose: 0,
+    total_gf: 0, gf: 0,
+    total_gc: 0, gc: 0
 },
 ssfc = {
     name: 'SSFC',
-    shortName: 'SSFC',
+    shortName: 'SFC',
     stadium: 'Laura Stadium',
     stadiumCapacity: 92632,
-    src: 'assests/team/ssfc.png'
+    src: 'assests/team/ssfc.png',
+    match: 0, played: 0,
+    total_win: 0, win: 0,
+    total_tie: 0, tie: 0,
+    total_lose: 0, lose: 0,
+    total_gf: 0, gf: 0,
+    total_gc: 0, gc: 0
 };
 
 const teams = [
