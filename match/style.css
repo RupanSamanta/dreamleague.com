@@ -177,8 +177,9 @@
 }
 #potm #name div:first-child {
     font-size: 20px;
+    margin-top: 15px;
 }
-#potm #name div:last-child {
+#potm #name div:nth-child(2) {
     font-size: 35px;
     font-family: 'Bold';
     margin-top: -5px;
@@ -193,8 +194,23 @@
 }
 #player-img img {
     width: auto;
-    height: 200px;
-    min-height: 200px;
+    height: 60px;
+    min-height: 45px;
+}
+#player-img #player {
+    height: 250px;
+    background-size: auto 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#player-img #player img {
+    border-radius: 50%;
+    background: #fff;
+    border: solid 3px #fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
 }
 #player-img div {
     width: 250px;
@@ -233,6 +249,47 @@
     background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 5px;
+    padding: 0 10px;
+}
+#field #home-lineup, #field #away-lineup{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#field #away-lineup{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#field #home-lineup div, #field #away-lineup div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#field #home-lineup div {
+    flex-direction: row-reverse;
+}
+#field #home-lineup p, #field #away-lineup p {
+    width: 60px;
+    height: fit-content;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Light';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+#field #home-lineup img, #field #away-lineup img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    outline: none;
 }
 #stats-lineup #stats {
     width: fit-content;
@@ -249,7 +306,7 @@
 #stats-lineup #stats td {
     width: 33%;
     padding: 15px 0;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     font-family: 'Light';
     border-bottom: solid 1px var(--grey);
