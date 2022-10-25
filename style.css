@@ -16,7 +16,7 @@
 }
 :root {
     --blue: #04f5ff;
-    --pink: #e90052;
+    --pink: #f5006f;
     --green: #00ff85;
     --purple: #38003c;
     --violet: #a400ff;
@@ -48,8 +48,9 @@ header {
     padding: 10px 5px;
     background: var(--purple);
     color: #fff;
-    z-index: 999;
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.5) !important;
+    z-index: 999;
+    user-select: none;
 }
 .sticky {
     position: fixed;
@@ -64,6 +65,7 @@ header div {
 header img {
     width: 45px;
     height: auto;
+    user-select: none;
 }
 header #cup-name{
     font-size: 18px;
@@ -271,7 +273,6 @@ footer .content-box {
     font-family: 'Medium';
     padding: 5px;
     margin: 5px 0;
-    user-select: none;
     transition: color 0.3s ease;
 }
 .content:hover {
@@ -316,7 +317,6 @@ footer .content-box {
 #powered-by img:first-child {
     width: 150px;
 }
-
 .view-more {
     display: flex;
     justify-content: flex-end;
@@ -328,4 +328,56 @@ footer .content-box {
     border: none;
     font-family: 'Light';
     font-size: 12px;
+}
+
+.table-box {
+    padding: 0;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px var(--grey);
+}
+.table-box table {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    border-collapse: collapse;
+}
+.table-box table th {
+    padding: 15px 7px;
+    font-family: 'Light';
+    font-size: 13px;
+    background: rgba(0,0,0,0.05);
+    text-align: left;
+}
+.table-box table th:first-child {
+    border-top-left-radius: 5px;
+}
+.table-box table th:last-child {
+    border-top-right-radius: 5px;
+}
+.table-box table th:nth-child(n+3){
+    text-align: center;
+}
+.table-box table td {
+    padding: 7px;
+    font-family: 'Light';
+    font-size: 14px;
+    border-bottom: solid 1px var(--grey);
+    text-align: center;
+}
+.table-box table td:nth-child(2){
+    text-align: left;
+}
+.table-box table td p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.table-box table tr:last-child td {
+    border: none;
+}
+.table-box table td img{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
 }
