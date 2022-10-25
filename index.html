@@ -51,6 +51,13 @@
                 <button onclick="window.open('https://rupansamanta.github.io/dreamleague.com/fixtures-results/', '_self')">View More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
         </section>
+        <section class="sect">
+            <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Table</div>
+            <div class="table-box"></div>
+        </section>
         <section>
             <div class="violet-border">
                 <div></div>            
@@ -93,19 +100,7 @@
                 <div></div>            
             </div>
             <div class="heading">Powered by</div>
-            <div id="powered-by">
-                <div>
-                    <img src="assests/images/DLS_Logo.png" alt="">
-                </div>                                
-                <img src="assests/images/Google-Logo.png" alt="">
-                <img src="assests/images/GitHub-Logo.png" alt="">
-                <img src="assests/images/Lenovo-Logo.png" alt="">
-                <img src="assests/images/Airtel-Logo.png" alt="">
-                <img src="assests/images/Redmi-Logo.jpg" alt="">
-                <img src="assests/images/Jio-Digital-Logo.png" alt="">
-                <img src="assests/images/Samsung_Logo.png" alt=""></img>
-                <img src="assests/images/VI_Logo.png" alt="">
-            </div>
+            <div id="powered-by"></div>
         </section>
     </main>
     <footer>
@@ -135,6 +130,8 @@
     }
     for (let i=0; i<teams.length; i++) {
         displayTeams(teams[i]);
-    }
+    }   
+    displaySponsor(0);
+    displayTable(teams, 0);
 </script>
 </html>
