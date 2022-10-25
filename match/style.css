@@ -227,7 +227,7 @@
 #lineups #field {
     width: 380px;
     height: 560px;
-    background: url("lineup-pitch.jpg");
+    background: url("../assests/images/lineup-pitch.jpg");
     background-size: 100% auto !important;
     background-position: center center;
     background-repeat: no-repeat;
