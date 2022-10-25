@@ -271,6 +271,7 @@ footer .content-box {
     font-family: 'Medium';
     padding: 5px;
     margin: 5px 0;
+    user-select: none;
     transition: color 0.3s ease;
 }
 .content:hover {
