@@ -154,25 +154,20 @@
                     </tr>
                 </table>
             </div>
+        </section>        
+        <section class="sect">
+            <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Table</div>
+            <div class="table-box"></div>
         </section>
         <section>
             <div class="violet-border">
                 <div></div>            
             </div>
             <div class="heading">Powered by</div>
-            <div id="powered-by">
-                <div>
-                    <img src="../../../assests/images/DLS_Logo.png" alt="">
-                </div>                                
-                <img src="../../../assests/images/Google-Logo.png">
-                <img src="../../../assests/images/GitHub-Logo.png">
-                <img src="../../../assests/images/Lenovo-Logo.png">
-                <img src="../../../assests/images/Airtel-Logo.png">
-                <img src="../../../assests/images/Redmi-Logo.jpg">
-                <img src="../../../assests/images/Jio-Digital-Logo.png">
-                <img src="../../../assests/images/Samsung_Logo.png">
-                <img src="../../../assests/images/VI_Logo.png">
-            </div>
+            <div id="powered-by"></div>
         </section>
     </main>
     <footer>
@@ -193,7 +188,8 @@
         </section>
     </footer>
 </body>
-<script src="../../../script.js"></script>
+<script src="../../../assests/team/team.js"></script>
+<script src="../../../fixtures-results/fixtures-results.js"></script>
 <script src="../../lineup.js"></script>
 <script>
     var home_formation = [1, 4, 3, 3],
@@ -225,5 +221,7 @@
         ['Silva', '']
     ];
     printLineup(home_formation, home_players, away_formation, away_players);
+    displayTable(teams, 3);
+    displaySponsor(3);
 </script>
 </html>
