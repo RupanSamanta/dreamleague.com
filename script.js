@@ -102,6 +102,33 @@ function displayTable(teamList, range) {
         tr.appendChild(th);
     }
     table.appendChild(tr);
+    for (let i=0; i<teamList.length; i++) {
+        var pts = teamList[i].win*3 + teamList[i].tie,
+            gd = teamList[i].gf-teamList[i].gc;
+        for (let j=0; j<teamList.length; j++) {
+            var pt = teamList[j].win*3 + teamList[j].tie,
+            g = teamList[j].gf-teamList[j].gc;
+            if(pts == pt) {
+                if(gd == g) {
+                    if(teamList[i].gf != teamList[j].gf) {
+                        var temp = teamList[i];
+                        teamList[i] = teamList[j];
+                        teamList[j] = temp;  
+                    }
+                }
+                else if (gd > g){
+                    var temp = teamList[i];
+                    teamList[i] = teamList[j];
+                    teamList[j] = temp;
+                }
+            }
+            else if (pts > pt){
+                var temp = teamList[i];
+                teamList[i] = teamList[j];
+                teamList[j] = temp;
+            }
+        }
+    }
     for (let i = 0; i < teamList.length; i++) {
         tr = document.createElement('tr');
         td = document.createElement('td');
