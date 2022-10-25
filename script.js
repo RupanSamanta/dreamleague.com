@@ -7,7 +7,15 @@ links = [
     'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
     'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
     'https://rupansamanta.github.io/dreamleague.com/stats/'
-]
+],
+sponsors = [
+    'DLS_Logo.png',
+    'Google-Logo.png', 'GitHub-Logo.png',
+    'Lenovo-Logo.png', 'Airtel-Logo.png',
+    'Redmi-Logo.jpg', 'Jio-Digital-Logo.png',
+    'Samsung_Logo.png', 'VI_Logo.png'
+];
+
 
 window.onscroll = function () {
     if (window.pageYOffset >= header.offsetTop) {
@@ -63,6 +71,22 @@ function displayTeams(team) {
     box.appendChild(div);
     box.className = 'team';
     team_box.appendChild(box);
+}
+
+function displaySponsor(range) {
+    var div = document.createElement('div'),
+    img = document.createElement('img'),
+    str = '';
+    for (let i=0; i<range; i++)
+        str += '../';
+    img.src = str+'assests/images/'+sponsors[0];
+    div.appendChild(img);
+    powered_by.appendChild(div);
+    for (let i=1; i<sponsors.length; i++) {
+        img = document.createElement('img');
+        img.src = str+'assests/images/'+sponsors[i];
+        powered_by.appendChild(img);
+    }
 }
 
 for (let i = 0; i < ctn.length; i++) {
