@@ -1,9 +1,16 @@
 var fixtures = [
     [rsfootballclub, ssfc],
-    [ssfc, annihilation],
-    [annihilation, rsfootballclub],
-    [ssfc, rsfootballclub],
+    [annihilation, krishfc],
+    [rsfootballclub, annihilation],
+    [ssfc, krishfc],
+    [krishfc, rsfootballclub],
     [annihilation, ssfc],
-    [rsfootballclub, annihilation]
+    
+    [ssfc, rsfootballclub],
+    [krishfc, annihilation],
+    [annihilation, rsfootballclub],
+    [krishfc, ssfc],
+    [rsfootballclub, krishfc],
+    [ssfc, annihilation]
 ],
 results = [];
