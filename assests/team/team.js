@@ -54,7 +54,7 @@ krishfc = {
     shortName: 'KFC',
     stadium: 'Krish Stadium',
     stadiumCapacity: 92632,
-    src: 'assests/team/kfc.png',
+    src: 'assests/team/ssfc.png',
     match: 0, played: 0,
     total_win: 0, win: 0,
     total_tie: 0, tie: 0,
