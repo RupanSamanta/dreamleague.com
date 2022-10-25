@@ -1,6 +1,7 @@
 var header = document.getElementsByTagName('header')[0], banner = document.getElementById('logo-banner'),
 match_box = document.getElementsByClassName('match-box')[0],
 team_box = document.getElementsByClassName('teams-box')[0],
+powered_by = document.getElementById('powered-by'),
 ctn = document.getElementsByClassName('content'),
 links = [
     'https://rupansamanta.github.io/dreamleague.com/',
