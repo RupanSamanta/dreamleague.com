@@ -35,6 +35,13 @@
             <div class="heading">Fixtures</div>
             <div class="match-box"></div>
         </section>
+        <section>
+            <div class="violet-border">
+                <div></div>            
+            </div>
+            <div class="heading">Powered by</div>
+            <div id="powered-by"></div>
+        </section>
     </main>
     <footer>
         <section>
@@ -62,5 +69,6 @@
         generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], true);
     }
     generateMatch(match_box, 'Final', {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}, {shortName: 'TBA', src: 'assests/team/tba.png'}, true);
+    displaySponsor(1);
 </script>
 </html>
