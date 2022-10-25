@@ -6,7 +6,7 @@
     <meta name="keywords" content="dls 22, dls cup">
     <meta name="theme-color" content="#38003c">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="UTF-8">
-    <link rel="shortcut icon" href="assests/favicon-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assests/favicon-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="../../style.css">
     <script src="https://kit.fontawesome.com/82872eeccd.js" crossorigin="anonymous"></script>
@@ -87,7 +87,9 @@
                     <div>Haaland</div>
                 </div>
                 <div id="player-img">
-                    <img src="../../../assests/player-image/Erling Haaland.png">
+                    <div id="player" style="background-image: url('../../../assests/player-image/Erling Haaland.png')">
+                        <img src="../../../assests/team/rsfc.png">
+                    </div>
                     <p></p>
                     <div>Man of the Match</div>
                     <p></p>
@@ -158,7 +160,19 @@
                 <div></div>            
             </div>
             <div class="heading">Powered by</div>
-            <div id="powered-by"></div>
+            <div id="powered-by">
+                <div>
+                    <img src="../../../assests/images/DLS_Logo.png" alt="">
+                </div>                                
+                <img src="../../../assests/images/Google-Logo.png">
+                <img src="../../../assests/images/GitHub-Logo.png">
+                <img src="../../../assests/images/Lenovo-Logo.png">
+                <img src="../../../assests/images/Airtel-Logo.png">
+                <img src="../../../assests/images/Redmi-Logo.jpg">
+                <img src="../../../assests/images/Jio-Digital-Logo.png">
+                <img src="../../../assests/images/Samsung_Logo.png">
+                <img src="../../../assests/images/VI_Logo.png">
+            </div>
         </section>
     </main>
     <footer>
@@ -180,29 +194,36 @@
     </footer>
 </body>
 <script src="../../../script.js"></script>
+<script src="../../lineup.js"></script>
 <script>
-    var button = document.querySelectorAll('#buttons button'),
-    stats_result = [
-        document.getElementById('potm'),
-        document.getElementById('lineups'),
-        document.getElementById('stats')
+    var home_formation = [1, 4, 3, 3],
+    home_players = [
+        ['Ederson', 'https://www.futwiz.com/assets/img/fifa23/faces/210257.png'],
+        ['Sandro', ''],
+        ['Laporte', ''],
+        ['Dias', ''],
+        ['Cancelo', ''],
+        ['Modric', ''],
+        ['De Bryune', ''],
+        ['Gundogan', ''],
+        ['Foden', ''],
+        ['Haaland', ''],
+        ['Silva', '']
+    ],
+    away_formation = [1, 4, 3, 3],
+    away_players = [
+        ['Ederson', 'https://www.futwiz.com/assets/img/fifa23/faces/210257.png'],
+        ['Sandro', ''],
+        ['Laporte', ''],
+        ['Dias', ''],
+        ['Cancelo', ''],
+        ['Modric', ''],
+        ['De Bryune', ''],
+        ['Gundogan', ''],
+        ['Foden', ''],
+        ['Haaland', ''],
+        ['Silva', '']
     ];
-    for (let i = 0; i < button.length; i++)
-        button[i].onclick = function () {
-            openClose(i);
-        }
-    
-    function openClose(ind) {
-        for (let i = 0; i < stats_result.length; i++) 
-            if (i == ind) {
-                stats_result[i].style.display = 'block';
-                button[i].disabled = true;
-            }
-            else {
-                stats_result[i].style.display = 'none';
-                button[i].disabled = false;
-            }
-    }
-    displaySponsor(3);
+    printLineup(home_formation, home_players, away_formation, away_players);
 </script>
 </html>
