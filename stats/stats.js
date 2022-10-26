@@ -110,10 +110,18 @@ function generateStatsBox(ind, elm, ext, arr) {
     d.appendChild(span);
     div.appendChild(d);
     img.src = str+arr[ind][0].src;
-    if (elm == 0)
+    if (elm == 0){
+        img.onerror = function () {
+        img.src = str+'assests/player-image/Photo-Missing.png';
+    }
         img.id = 'player-img';
-    else
+    }
+    else {
         img.id = 'club-img';
+        img.onerror = function () {
+           img.src = str+'assests/team/tba.png';
+        }
+    }
     img.setAttribute('alt', arr[ind][0].name);
     div.appendChild(img);
     stats.appendChild(div);
@@ -128,6 +136,14 @@ function generateStatsBox(ind, elm, ext, arr) {
         span.innerHTML = i+1;
         div.appendChild(span);
         img.src = str+arr[ind][i].src;
+        if (elm == 0)
+        img.onerror = function () {
+            img.src = str+'assests/player-image/Photo-Missing.png';
+        }
+        else
+            img.onerror = function () {
+                img.src = str+'assests/team/tba.png';
+            }
         div.appendChild(img);
         span = document.createElement('span');
         span.innerHTML = arr[ind][i].name;
