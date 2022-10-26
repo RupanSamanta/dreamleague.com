@@ -1,5 +1,5 @@
 var header = document.getElementsByTagName('header')[0], banner = document.getElementById('logo-banner'),
-match_box = document.getElementsByClassName('match-box')[0],
+match_box = document.getElementsByClassName('match-box'),
 team_box = document.getElementsByClassName('teams-box')[0],
 powered_by = document.getElementById('powered-by'),
 ctn = document.getElementsByClassName('content'),
@@ -27,7 +27,7 @@ window.onscroll = function () {
         header.classList.remove('sticky');
     }
 }
-function generateMatch(m, no, team1, team2, ext) {
+function generateMatch(m, no, team1, team2, type, ext) {
     var match = document.createElement('div'),
     div = document.createElement('div');
     match.className = 'match';
@@ -39,9 +39,21 @@ function generateMatch(m, no, team1, team2, ext) {
         div.innerHTML += '<img src="../'+team1.src+'">';
     else 
         div.innerHTML += '<img src="'+team1.src+'">';
-    div.innerHTML += `<p id="verses">
-        <span></span><span>V</span><span></span>
-    </p>`;
+    if (type) {
+        div.innerHTML += `<p id="verses">
+            <span></span><span>V</span><span></span>
+        </p>`;
+        m = m[0];
+    }
+    else {
+        div.innerHTML += `<p id="done">
+            <span>`+results[no-1][0]+`</span><span>-</span><span>`+results[no-1][1]+`</span>
+        </p>`;
+        m = m[1];
+        match.onclick = function () {
+            window.open('https://rupansamanta.github.io/dreamleague.com/match/season-1/'+no, '_self');
+        }
+    }
     if (ext)
         div.innerHTML += '<img src="../'+team2.src+'">';
     else 
