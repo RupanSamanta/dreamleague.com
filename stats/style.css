@@ -1,6 +1,6 @@
 :root {
     --blue: #04f5ff;
-    --pink: #e90052;
+    --pink: #f5006f;
     --green: #00ff85;
     --purple: #38003c;
     --violet: #a400ff;
@@ -9,9 +9,10 @@
 }
 .stats-box {
     padding: 10px;
-    margin: 20px auto;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .stats {
     width: 380px;
@@ -19,7 +20,7 @@
     padding: 10px;
     box-shadow: 0 0 10px 1px var(--grey);
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 #stats-title {
     font-family: 'Medium';
