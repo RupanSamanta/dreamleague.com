@@ -13,4 +13,6 @@ var fixtures = [
     [rsfootballclub, krishfc],
     [ssfc, annihilation]
 ],
-results = [];
+results = [
+    [1, 0]
+];
