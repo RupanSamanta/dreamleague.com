@@ -37,6 +37,13 @@
         </section>
         <section>
             <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Results</div>
+            <div class="match-box"></div>
+        </section>
+        <section>
+            <div class="violet-border">
                 <div></div>            
             </div>
             <div class="heading">Powered by</div>
@@ -65,10 +72,13 @@
 <script src="../fixtures-results/fixtures-results.js"></script>
 <script src="../script.js"></script>
 <script>
-    for (let i=0; i<fixtures.length; i++) {
-        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], true);
+    for (let i=results.length; i<fixtures.length; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], true, true);
     }
-    generateMatch(match_box, 'Final', {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}, {shortName: 'TBA', src: 'assests/team/tba.png'}, true);
+    generateMatch(match_box, 'Final', {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}, {shortName: 'TBA', src: 'assests/team/tba.png'}, true, true);
+    for (let i=0; i<results.length; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], false, true);
+    }
     displaySponsor(1);
 </script>
 </html>
