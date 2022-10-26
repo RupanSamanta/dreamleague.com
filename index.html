@@ -55,6 +55,13 @@
             <div class="violet-border">
                 <div></div>
             </div>
+            <div class="heading">Results</div>
+            <div class="match-box"></div>
+        </section>
+        <section class="sect">
+            <div class="violet-border">
+                <div></div>
+            </div>
             <div class="heading">Table</div>
             <div class="table-box"></div>
         </section>
@@ -125,8 +132,11 @@
 <script src="fixtures-results/fixtures-results.js"></script>
 <script src="script.js"></script>
 <script>
-    for (let i=0; i<3; i++) {
-        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], false);
+    for (let i=results.length; i<5; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], true, false);
+    }
+    for (let i=0; i<results.length; i++) {
+        generateMatch(match_box, i+1, fixtures[i][0], fixtures[i][1], false, false);
     }
     for (let i=0; i<teams.length; i++) {
         displayTeams(teams[i]);
