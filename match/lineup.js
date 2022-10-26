@@ -20,6 +20,7 @@ var field = document.getElementById('field'),
                 stats_result[i].style.display = 'none';
                 button[i].disabled = false;
             }
+            
     }
 function printLineup(hf, hp, af, ap) {
     var lineupBox = document.createElement('div');
@@ -28,11 +29,13 @@ function printLineup(hf, hp, af, ap) {
     for (let i = 0; i<hf.length; i++) {
         div = document.createElement('div');
         for (let j=0; j<hf[i]; j++) {
+            var pos = hp[count][1];
             p = document.createElement('p');
-            img = document.createElement('img');
+            img = document.createElement('span');
             span = document.createElement('span');
-            img.src = hp[0][1];
+            img.innerHTML = pos;
             span.innerHTML = hp[count][0];
+            img.id = pos.charAt(pos.length-1);           
             p.appendChild(img);
             p.appendChild(span);
             div.appendChild(p);
@@ -47,16 +50,20 @@ function printLineup(hf, hp, af, ap) {
     for (let i = 0; i<af.length; i++) {
         div = document.createElement('div');
         for (let j=0; j<af[i]; j++) {
+            var pos = ap[count][1];
             p = document.createElement('p');
-            img = document.createElement('img');
+            img = document.createElement('span');
             span = document.createElement('span');
-            img.src = ap[0][1];
+            img.innerHTML = pos;
             span.innerHTML = ap[count][0];
+            img.id = pos.charAt(pos.length-1);           
             p.appendChild(img);
             p.appendChild(span);
             div.appendChild(p);
             count++;
         }
+        if (af[i] == 2)
+            div.style.justifyContent = 'center'
         lineupBox.appendChild(div);
     }
     field.appendChild(lineupBox);
