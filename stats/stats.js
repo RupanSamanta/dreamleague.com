@@ -6,6 +6,9 @@ stats_titles = [
     'Goals', 'Shots', 'Shots on Target',
     'Pass Completion', 'Cleansheets'
 ],
+player_stats_title = [
+    'Goals', 'Assists', 'Cleansheets'
+]
 stats_box = document.getElementsByClassName('stats-box');
 
 for (let k = 0; k < club.length; k++) {
@@ -53,7 +56,7 @@ for (let i = 0; i < club[k].length; i++) {
 }
 }
 
-function generateStatsBox(ind, elm, ext) {
+function generateStatsBox(ind, elm, ext, arr) {
     var stats = document.createElement('div'),
     div = document.createElement('div'),
     span = document.createElement('span'),
@@ -62,7 +65,10 @@ function generateStatsBox(ind, elm, ext) {
     for (let i=0; i<ext; i++)
         str += '../';
     div.id = 'stats-title';
-    div.innerHTML = stats_titles[ind];
+    if (elm == 0)
+        div.innerHTML = player_stats_title[ind];
+    else    
+        div.innerHTML = stats_titles[ind];
     stats.appendChild(div);
     
     div = document.createElement('div');
@@ -74,34 +80,45 @@ function generateStatsBox(ind, elm, ext) {
     d.appendChild(span);
     span = document.createElement('span');
     span.id = 'name';
-    span.innerHTML = club[ind][0].name;
+    span.innerHTML = arr[ind][0].name;
     p.appendChild(span);
     span = document.createElement('span');
     span.id = 'club';
-    span.innerHTML = club[ind][0].stadium;
+    if (elm == 0)
+        span.innerHTML = arr[ind][0].club;
+    else
+        span.innerHTML = arr[ind][0].stadium;
     p.appendChild(span);
     d.appendChild(p);
     span = document.createElement('span');
     span.id = 'value';
+    if (elm != 0) {
     if (ind == 0)
-        span.innerHTML = club[ind][0].gf;
+        span.innerHTML = arr[ind][0].gf;
     else if (ind == 1)
-        span.innerHTML = club[ind][0].shot;
+        span.innerHTML = arr[ind][0].shot;
     else if (ind == 2)
-        span.innerHTML = club[ind][0].shotTarget;
+        span.innerHTML = arr[ind][0].shotTarget;
     else if (ind == 3)
-        span.innerHTML = club[ind][0].passCompletion+'%';
+        span.innerHTML = arr[ind][0].passCompletion+'%';
     else if (ind == 4)
-        span.innerHTML = club[ind][0].cleansheet;
+        span.innerHTML = arr[ind][0].cleansheet;
+    }
+    else {
+        span.innerHTML = arr[ind][0].value;
+    }
     d.appendChild(span);
     div.appendChild(d);
-    img.src = str+club[ind][0].src;
-    img.id = 'club-img';
-    img.setAttribute('alt', club[ind][0].name);
+    img.src = str+arr[ind][0].src;
+    if (elm == 0)
+        img.id = 'player-img';
+    else
+        img.id = 'club-img';
+    img.setAttribute('alt', arr[ind][0].name);
     div.appendChild(img);
     stats.appendChild(div);
     stats.className = 'stats';
-    for (let i = 1; i < club[ind].length; i++) {
+    for (let i = 1; i < arr[ind].length; i++) {
         var box = document.createElement('div'),
         div = document.createElement('div'),
         span = document.createElement('span'),
@@ -110,35 +127,42 @@ function generateStatsBox(ind, elm, ext) {
         box.id = 'box';
         span.innerHTML = i+1;
         div.appendChild(span);
-        img.src = str+club[ind][i].src;
+        img.src = str+arr[ind][i].src;
         div.appendChild(img);
         span = document.createElement('span');
-        span.innerHTML = club[ind][i].name;
+        span.innerHTML = arr[ind][i].name;
         p.appendChild(span);
         span = document.createElement('span');
-        span.innerHTML = club[ind][i].stadium;
+        if (elm == 0)
+            span.innerHTML = arr[ind][i].club;
+        else
+            span.innerHTML = arr[ind][i].stadium;
         p.appendChild(span);
         div.appendChild(p);
         box.appendChild(div);
         div = document.createElement('div');
-        if (ind == 0)
-            div.innerHTML = club[ind][i].gf;
-        else if (ind == 1)
-            div.innerHTML = club[ind][i].shot;
-        else if (ind == 2)
-            div.innerHTML = club[ind][i].shotTarget;
-        else if (ind == 3)
-            div.innerHTML = club[ind][i].passCompletion+'%';
-        else if (ind == 4)
-            div.innerHTML = club[ind][i].cleansheet;
+        if (elm != 0) {
+            if (ind == 0)
+                div.innerHTML = arr[ind][i].gf;
+            else if (ind == 1)
+                div.innerHTML = arr[ind][i].shot;
+            else if (ind == 2)
+                div.innerHTML = arr[ind][i].shotTarget;
+            else if (ind == 3)
+                div.innerHTML = arr[ind][i].passCompletion+'%';
+            else if (ind == 4)
+                div.innerHTML = arr[ind][i].cleansheet;
+        }
+        else {
+            div.innerHTML = arr[ind][i].value;
+        }
         box.appendChild(div);
         stats.appendChild(box);
     }
     stats_box[elm].appendChild(stats);
 }
 for (let i=0; i<club.length; i++)
-    generateStatsBox(i, 1, 1);
+    generateStatsBox(i, 1, 1, club);
 
-for (let i=0; i<player_stats.length; i++)
-    generateStatsBox(i, 0, 1);
-
+for (let i=0; i<season1_player_stats.length; i++)
+    generateStatsBox(i, 0, 1, season1_player_stats);
