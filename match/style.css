@@ -274,7 +274,7 @@
 #field #home-lineup p, #field #away-lineup p {
     width: 60px;
     height: fit-content;
-    margin: 0 auto;
+    margin: 0 10px;
     color: #fff;
     font-size: 11px;
     font-family: 'Light';
@@ -284,12 +284,29 @@
     align-items: center;
     white-space: nowrap;
 }
-#field #home-lineup img, #field #away-lineup img {
+#field #home-lineup span:first-child, #field #away-lineup span:first-child {
+    display: block;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: solid 1px #fff;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+#field #F {
+    background: tomato;
+}
+#field #M {
+    background: var(--yellow);
+}
+#field #B {
+    background: limegreen;
+}
+#field #K {
+    background: cornflowerblue;
 }
 #stats-lineup #stats {
     width: fit-content;
