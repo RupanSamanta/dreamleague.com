@@ -184,7 +184,7 @@ function displayTable(teamList, range) {
                 
         td = document.createElement('td');
         var gd = teamList[i].gf - teamList[i].gc;
-        td.innerHTML = gd>0 ? '+'+gd : gd<0 ? '-'+gd : 0;
+        td.innerHTML = gd>0 ? '+'+gd : gd;
         tr.appendChild(td);
                 
         td = document.createElement('td');
