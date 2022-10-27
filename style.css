@@ -35,6 +35,9 @@
 img {
     user-select: none;
 }
+html {
+    scroll-behaviour: smooth !important;
+}
 body {
     margin: 0;
     background: #fff;
