@@ -34,7 +34,6 @@ function generateNews(max, ext) {
         news.appendChild(div);    
         var split = news_list[i][0].split(' ');
         news.className = 'news '+split[0]+'-'+split[1];
-        console.log( 'news '+split[0]+'-'+split[1]);
         news_box.appendChild(news);
     }
 }
