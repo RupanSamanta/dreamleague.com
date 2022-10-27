@@ -120,6 +120,8 @@ header i {
     padding: 15px 10px;
     font-family: 'Bold';
     border-bottom: solid 5px var(--grey);
+    display: flex;
+    justify-content: space-between;
 }
 .teams-box {
     padding: 10px;
