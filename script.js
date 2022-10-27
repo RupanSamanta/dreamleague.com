@@ -1,4 +1,5 @@
-var header = document.getElementsByTagName('header')[0], banner = document.getElementById('logo-banner'),
+var header = document.getElementsByTagName('header')[0],
+banner = document.getElementById('logo-banner'),
 match_box = document.getElementsByClassName('match-box'),
 team_box = document.getElementsByClassName('teams-box')[0],
 powered_by = document.getElementById('powered-by'),
@@ -230,4 +231,21 @@ function footerElements(ext) {
     <img src="`+str+`assests/cup-logo-white.png">
     <div>League</div>`;
     footer.appendChild(section);
+}
+
+function headerElements(ext) {
+    var str = '';
+    for (let i = 0; i < ext; i++)
+        str += '../';
+    document.getElementsByTagName('header')[0].innerHTML = 
+        `<div onclick="window.open('https://rupansamanta.github.io/dreamleague.com/', '_self')">
+            <img src="`+str+`assests/cup-logo-white.png" alt="">
+            <div id="cup-name">
+                <span>Dream</span>
+                <span>League</span>
+            </div>
+        </div>
+        <div onclick="document.documentElement.scrollTop = document.getElementsByTagName('footer')[0].offsetTop">
+            <i class="fa-solid fa-bars"></i>
+        </div>`;
 }
