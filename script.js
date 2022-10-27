@@ -2,12 +2,12 @@ var header = document.getElementsByTagName('header')[0], banner = document.getEl
 match_box = document.getElementsByClassName('match-box'),
 team_box = document.getElementsByClassName('teams-box')[0],
 powered_by = document.getElementById('powered-by'),
-ctn = document.getElementsByClassName('content'),
 links = [
-    'https://rupansamanta.github.io/dreamleague.com/',
-    'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
-    'https://rupansamanta.github.io/dreamleague.com/fixtures-results/',
-    'https://rupansamanta.github.io/dreamleague.com/stats/'
+    ['Home', 'https://rupansamanta.github.io/dreamleague.com/'],
+    ['Fixtures', 'https://rupansamanta.github.io/dreamleague.com/fixtures-results/'],
+    ['Results', 'https://rupansamanta.github.io/dreamleague.com/fixtures-results/'],
+    ['Stats', 'https://rupansamanta.github.io/dreamleague.com/stats/'],
+['News', 'https://rupansamanta.github.io/dreamleague.com/news/']
 ],
 sponsors = [
     'DLS_Logo.png',
@@ -196,9 +196,38 @@ function displayTable(teamList, range) {
     tableBox.appendChild(table);
 }
 
-
-for (let i = 0; i < ctn.length; i++) {
-    ctn[i].addEventListener('click', function () {
-        window.open(links[i], '_self');
-    });
+function footerElements(ext) {
+    var footer = document.getElementsByTagName('footer')[0],
+    section = document.createElement('section'),
+    div = document.createElement('div'),
+    str = '';
+    
+    div.className = 'title';
+    div.innerHTML = 'Dream League';
+    section.appendChild(div);
+    div = document.createElement('div');
+    div.className = 'content-box';    
+    for (let i = 0; i < links.length; i++) {
+        var d = document.createElement('div');
+        d.className = 'content';
+        d.innerHTML = links[i][0];
+        d.onclick = function () {
+            window.open(links[i][1], '_self');
+        }
+        div.appendChild(d);
+    }
+    section.appendChild(div);
+    footer.appendChild(section);
+    div = document.createElement('div');
+    div.className = 'hr';
+    footer.appendChild(div);
+    section = document.createElement('section');
+    section.id = 'footer-logo';
+    for (let i = 0; i < ext; i++)
+        str += '../';
+    section.innerHTML = 
+    `<div>Dream</div>
+    <img src="`+str+`assests/cup-logo-white.png">
+    <div>League</div>`;
+    footer.appendChild(section);
 }
