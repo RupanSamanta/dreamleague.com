@@ -1,13 +1,15 @@
 var news_list = [
+    ['Player News', 'Diogo Jota to play a crucial role for Krish FC'],
     ['League News', 'Annihilation to face Krish FC in the second match of Dream League'],
     ['League News', 'Phil Foden’s late goal snatched a win for RS Football Club against SSFC in the first match'],
     ['Player News', 'No Haaland Show subed off early due to leg injury'],
-    ['Player News', 'Lionel Messi of SSFC can be a big headache for RS Football Club'],
+    ['Player News', 'Lionel Messi struggle against RS Football Club no goal for him'],
     ['Club News', 'Paulo Dybala to lead Annihilation in Dream League']
 ],
 img_src = [
+    'assests/images/Diogo-Jota.jpg',
     'assests/images/ann-kfc-banner1.jpg',
-    'assests/images/rsfc-ssfc-banner1.jpg', 
+    'assests/images/Phil-Foden.jpg', 
     'assests/images/haaland-celebration.jpg',
     'assests/images/messi-image.jpg',
     'assests/images/paulo-dybala-image.jpg'
@@ -22,7 +24,7 @@ function generateNews(max, ext) {
         var str = '';
         for (let j = 0; j < ext; j++)
             str += '../';
-        div.style.backgroundImage = 'url("'+str+img_src[i]+'")';
+        div.style.backgroundImage = 'url("'+st r+img_src[i]+'")';
         news.appendChild(div);
         div = document.createElement('div');
         span.innerHTML = news_list[i][0];
