@@ -41,6 +41,8 @@ function printLineup(hf, hp, af, ap) {
             div.appendChild(p);
             count++;
         }
+        if (hf[i] == 2)
+            div.style.justifyContent = 'center'
         lineupBox.appendChild(div);
     }
     field.appendChild(lineupBox);
