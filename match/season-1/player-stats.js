@@ -13,7 +13,7 @@ var player_goals = [
     },
     {
         name: 'Rodrigo Moreno',
-        club: 'RS Football Club',
+        club: 'Krish FC',
         src: 'assests/player-image/Rodrigo Moreno.png',
         value: 1
     },
