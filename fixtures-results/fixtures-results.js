@@ -14,5 +14,6 @@ var fixtures = [
     [ssfc, annihilation]
 ],
 results = [
-    [1, 0]
+    [1, 0],
+    [1, 2]
 ];
