@@ -1,5 +1,10 @@
 var news_list = [
     {
+        type: 'League News',
+        desc: 'Jota’s heroic performance helped Krish FC defeat opponent Annihilation at their home ground',
+        url: 'assests/images/diogo-jota-against-ann.jpg'
+    },
+    {
         type: 'Player News',
         desc: 'Diogo Jota to play a crucial role for Krish FC',
         url: 'assests/images/Diogo-Jota.jpg',
