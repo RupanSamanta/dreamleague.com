@@ -108,7 +108,7 @@ function displayTable(teamList, range) {
     var tableBox = document.getElementsByClassName('table-box')[0],
     table = document.createElement('table'),
     tr = document.createElement('tr'),
-    th, td, arr = ['Pos', 'Club', 'P', 'W', 'T', 'L', 'GF', 'GC', 'GD', 'Pts'];
+    th, td, arr = ['Pos', 'Club', 'P', 'W', 'D', 'L', 'GF', 'GC', 'GD', 'Pts'];
     for (let i=0; i<arr.length; i++) {
         th = document.createElement('th');
         th.innerHTML = arr[i];
