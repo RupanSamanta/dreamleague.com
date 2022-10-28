@@ -113,7 +113,7 @@
     align-items: flex-start;
 }
 .timeline img {
-    width: 15px;
+    width: auto;
     height: 15px;
 }
 #other {
