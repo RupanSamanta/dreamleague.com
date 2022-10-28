@@ -123,7 +123,7 @@ function displayTable(teamList, range) {
             g = teamList[j].gf-teamList[j].gc;
             if(pts == pt) {
                 if(gd == g) {
-                    if(teamList[i].gf != teamList[j].gf) {
+                    if(teamList[i].gf > teamList[j].gf) {
                         var temp = teamList[i];
                         teamList[i] = teamList[j];
                         teamList[j] = temp;  
