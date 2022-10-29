@@ -5,6 +5,11 @@ var news_list = [
         url: 'assests/images/diogo-jota-against-ann.jpg'
     },
     {
+        type: 'League News',
+        desc: 'Fans favourite Annihilation went down 1-2 against Krish FC in their first match',
+        url: 'assests/images/dybala-against-kfc.jpg';
+    },
+    {
         type: 'Player News',
         desc: 'Diogo Jota to play a crucial role for Krish FC',
         url: 'assests/images/Diogo-Jota.jpg',
