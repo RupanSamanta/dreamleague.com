@@ -39,6 +39,7 @@
 }
 #box img {
     width: auto;
+    min-width: 35px;
     height: 35px;
     margin: 0 20px;
 }
