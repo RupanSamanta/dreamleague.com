@@ -22,6 +22,12 @@ var player_goals = [
         club: 'Annihilation',
         src: 'assests/player-image/Paulo Dybala.png',
         value: 1
+    },
+    {
+        name: 'Riyad Mahrez',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Riyad Mahrez.png',
+        value: 1
     }
 ],
 player_assists = [
@@ -41,6 +47,12 @@ player_assists = [
         name: 'Kasper Dolberg',
         club: 'Annihilation',
         src: 'assests/player-image/Kasper Dolberg.png',
+        value: 1
+    },
+    {
+        name: 'Oleksandr Zinchenko',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Oleksandr Zinchenko.png',
         value: 1
     }
 ],
