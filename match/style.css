@@ -12,7 +12,7 @@
     font-size: 12px;
     color: #fff;
     background: rgba(56, 0, 60, 0.8);
-    padding: 12px 10px; 
+    padding: 12px 10px;
 }
 #match-section {
     padding: 20px 10px;
@@ -38,20 +38,20 @@
     align-items: flex-start;
 }
 #logo-score #logo {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #logo-score #logo img {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 #logo-score #name {
-    width: 70px;
-    height: 55px;
+    width: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,8 @@
     font-size: 17px;
 }
 #logo-score #score {
-    width: 100px;
-    height: 55px;
+    width: 95px;
+    height: 50px;
     background: var(--pink);
     font-size: 30px;
     color: #fff;
@@ -87,7 +87,7 @@
     margin: 0 5px;
 }
 .timeline {
-    width: 370px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -97,7 +97,7 @@
 .timeline p {
     width: 33%;
     display: block;
-    margin: 0 5px;
+    margin: 10px 5px;
     font-size: 12px;
     font-family: 'Light';
     display: flex;
@@ -129,7 +129,7 @@
     background: var(--purple);
 }
 #buttons button {
-    width: 110px;
+    width: 100px;
     border-radius: 5px 5px 0 0;
     color: gray;
     background: lightgrey;
@@ -148,7 +148,7 @@
 #potm {
     background: linear-gradient(to right, var(--violet), var(--pink));
     border-radius: 5px;
-    width: 380px;
+    width: 300px;
     padding: 20px;
     margin: 40px auto;
 }
@@ -198,7 +198,7 @@
     min-height: 45px;
 }
 #player-img #player {
-    height: 250px;
+    height: 200px;
     background-size: auto 100% !important;
     background-position: center center !important;
     background-repeat: no-repeat;
@@ -237,12 +237,12 @@
     justify-content: center;
 }
 #lineups #team-logo img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 #lineups #field {
-    width: 380px;
-    height: 560px;
+    width: 300px;
+    height: 437px;
     background: url("../assests/images/lineup-pitch.jpg");
     background-size: 100% auto !important;
     background-position: center center;
@@ -250,9 +250,12 @@
     margin: 0 auto;
     border-radius: 5px;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #field #home-lineup, #field #away-lineup{
-    height: 280px;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -265,18 +268,17 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 #field #home-lineup div {
     flex-direction: row-reverse;
 }
 #field #home-lineup p, #field #away-lineup p {
-    width: 60px;
+    min-width: 60px;
     height: fit-content;
-    margin: 0 10px;
+    margin: 0 5px;
     color: #fff;
-    font-size: 11px;
+    font-size: 10px;
     font-family: 'Light';
     display: flex;
     flex-direction: column;
@@ -286,8 +288,8 @@
 }
 #field #home-lineup span:first-child, #field #away-lineup span:first-child {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     border: solid 1px #fff;
     outline: none;
@@ -316,26 +318,27 @@
     display: none;
 }
 #stats-lineup #stats table {
-    width: 380px;
+    width: 300px;
     height: auto;
     border-collapse: collapse;
 }
 #stats-lineup #stats td {
-    width: 33%;
-    padding: 15px 0;
+    width: 25%;
+    padding: 10px 0;
     font-size: 14px;
     text-align: center;
     font-family: 'Light';
     border-bottom: solid 1px var(--grey);
 }
 #stats-lineup #stats td:nth-child(2) {
+    width: 45%;
     font-family: 'Medium';
 }
 #stats-lineup #stats tr:nth-child(1) td {
     border-width: 3px;
 }
 #stats-lineup #stats img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 #stats-lineup #stats tr:nth-child(n+2):hover {
