@@ -35,9 +35,6 @@
 img {
     user-select: none;
 }
-html {
-    scroll-behaviour: smooth !important;
-}
 body {
     margin: 0;
     background: #fff;
@@ -68,7 +65,6 @@ header div {
 header img {
     width: 45px;
     height: auto;
-    user-select: none;
 }
 header #cup-name{
     font-size: 18px;
@@ -119,9 +115,9 @@ header i {
     font-size: 18px;
     padding: 15px 10px;
     font-family: 'Bold';
-    border-bottom: solid 5px var(--grey);
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 5px var(--grey);
 }
 .teams-box {
     padding: 10px;
@@ -278,7 +274,6 @@ footer .content-box {
     font-family: 'Medium';
     padding: 5px;
     margin: 5px 0;
-    user-select: none;
     transition: color 0.3s ease;
 }
 .content:hover {
@@ -337,16 +332,19 @@ footer .content-box {
 }
 
 .table-box {
+    width: calc(100% - 20px);
     padding: 0;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px var(--grey);
+    overflow-x: ;
 }
 .table-box table {
     width: 100%;
     height: auto;
     border-radius: inherit;
     border-collapse: collapse;
+    margin: 0 auto;
 }
 .table-box table th {
     padding: 15px 7px;
@@ -365,7 +363,8 @@ footer .content-box {
     text-align: center;
 }
 .table-box table td {
-    padding: 7px;
+    height: 45px; /*new line*/
+    padding: 5px 7px;
     font-family: 'Light';
     font-size: 14px;
     border-bottom: solid 1px var(--grey);
