@@ -242,9 +242,9 @@
 }
 #lineups #field {
     width: 300px;
-    height: 437px;
+    height: 470px;
     background: url("../assests/images/lineup-pitch.jpg");
-    background-size: 100% auto !important;
+    background-size: 100% 100% !important;
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -288,8 +288,8 @@
 }
 #field #home-lineup span:first-child, #field #away-lineup span:first-child {
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: solid 1px #fff;
     outline: none;
