@@ -41,9 +41,11 @@ function printLineup(hf, hp, af, ap) {
             div.appendChild(p);
             count++;
         }
-        if (hf[i] == 2)
-            div.style.justifyContent = 'center'
         lineupBox.appendChild(div);
+        if (hp[i] == 2)
+            div.style.justifyContent = 'center';
+        else
+            div.style.justifyContent = 'space-evenly';
     }
     field.appendChild(lineupBox);
     lineupBox = document.createElement('div');
@@ -65,7 +67,9 @@ function printLineup(hf, hp, af, ap) {
             count++;
         }
         if (af[i] == 2)
-            div.style.justifyContent = 'center'
+            div.style.justifyContent = 'center';
+        else
+            div.style.justifyContent = 'space-evenly'
         lineupBox.appendChild(div);
     }
     field.appendChild(lineupBox);
