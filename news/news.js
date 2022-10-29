@@ -7,7 +7,7 @@ var news_list = [
     {
         type: 'League News',
         desc: 'Fans favourite Annihilation went down 1-2 against Krish FC in their first match',
-        url: 'assests/images/dybala-against-kfc.jpg';
+        url: 'assests/images/dybala-against-kfc.jpg'
     },
     {
         type: 'Player News',
