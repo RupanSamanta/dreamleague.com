@@ -42,7 +42,7 @@ function printLineup(hf, hp, af, ap) {
             count++;
         }
         lineupBox.appendChild(div);
-        if (hp[i] == 2)
+        if (hf[i] == 2)
             div.style.justifyContent = 'center';
         else
             div.style.justifyContent = 'space-evenly';
