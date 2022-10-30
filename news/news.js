@@ -1,6 +1,16 @@
 var news_list = [
     {
         type: 'League News',
+        desc: 'Another late goal, another win for RS Football Club as Mahrez striked at last minute',
+        url: 'assests/images/mahrez-celebration.jpg',
+    },
+    {
+        type: 'League News',
+        desc: 'RS Football Club to face Annihilation in the third match of Dream League',
+        url: 'assests/images/rfc-ann-banner1.jpg',
+    },
+    {
+        type: 'League News',
         desc: 'Jota’s heroic performance helped Krish FC defeat opponent Annihilation at their home ground',
         url: 'assests/images/diogo-jota-against-ann.jpg'
     },
