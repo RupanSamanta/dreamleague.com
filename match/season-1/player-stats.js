@@ -9,7 +9,7 @@ var player_goals = [
         name: 'Diogo Jota',
         club: 'Krish FC',
         src: 'assests/player-image/Diogo Jota.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Rodrigo Moreno',
@@ -27,6 +27,18 @@ var player_goals = [
         name: 'Riyad Mahrez',
         club: 'RS Football Club',
         src: 'assests/player-image/Riyad Mahrez.png',
+        value: 1
+    },
+    {
+        name: 'Lionel Messi',
+        club: 'SSFC',
+        src: 'assests/player-image/Lionel Messi.png',
+        value: 2
+    },
+    {
+        name: 'Ángel Correa',
+        club: 'Krish FC',
+        src: 'assests/player-image/Angel Correa.png',
         value: 1
     }
 ],
@@ -61,9 +73,19 @@ player_cleansheet = [
         name: 'Ederson',
         club: 'RS Football Club',
         src: 'assests/player-image/Ederson.png',
-        value: 1
+        value: 2
     }
 ],
+season1_player_stats;
+for (let i = 0; i < player_goals.length; i++) {
+   for (let j = 0; j < player_goals.length; j++) {
+        if (player_goals[i].value > player_goals[j].value) {
+            var temp = player_goals[i];
+            player_goals[i] = player_goals[j];
+            player_goals[j] = temp;
+        }
+    }
+}
 season1_player_stats = [
     player_goals, player_assists, player_cleansheet
 ];
