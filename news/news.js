@@ -1,13 +1,23 @@
 var news_list = [
     {
         type: 'League News',
+        desc: 'Messi’s brace and De Bryune’s screamer helped them defeat Krish FC by 3-2 and secure their first win',
+        url: 'assests/images/messi-celebration.jpg'
+    },
+    {
+        type: 'League News',
+        desc: 'SSFC in search of their first win as they face Krish FC in the fourth match of Dream League',
+        url: 'assests/images/sfc-kfc-banner.jpg'
+    },
+    {
+        type: 'League News',
         desc: 'Another late goal, another win for RS Football Club as Mahrez striked at last minute',
-        url: 'assests/images/mahrez-celebration.jpg',
+        url: 'assests/images/mahrez-celebration.jpg'
     },
     {
         type: 'League News',
         desc: 'RS Football Club to face Annihilation in the third match of Dream League',
-        url: 'assests/images/rfc-ann-banner1.jpg',
+        url: 'assests/images/rfc-ann-banner1.jpg'
     },
     {
         type: 'League News',
