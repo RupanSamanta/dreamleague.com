@@ -1,7 +1,7 @@
 var news_list = [
     {
         type: 'League News',
-        desc: 'Messi’s brace and De Bryune’s screamer helped them defeat Krish FC by 3-2 and secure their first win',
+        desc: 'Messi’s brace and De Bryune’s screamer helped SSFC defeat Krish FC by 3-2 and secure their first win',
         url: 'assests/images/messi-celebration.jpg'
     },
     {
