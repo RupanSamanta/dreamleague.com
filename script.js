@@ -134,6 +134,11 @@ function displayTable(teamList, range) {
                     teamList[i] = teamList[j];
                     teamList[j] = temp;
                 }
+                else if (gd < g){
+                    var temp = teamList[i];
+                    teamList[i] = teamList[j];
+                    teamList[j] = temp;
+                }
             }
             else if (pts > pt){
                 var temp = teamList[i];
