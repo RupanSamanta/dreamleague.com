@@ -27,7 +27,7 @@ var player_goals = [
         name: 'Riyad Mahrez',
         club: 'RS Football Club',
         src: 'assests/player-image/Riyad Mahrez.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Lionel Messi',
@@ -39,6 +39,18 @@ var player_goals = [
         name: 'Ángel Correa',
         club: 'Krish FC',
         src: 'assests/player-image/Angel Correa.png',
+        value: 1
+    },
+    {
+        name: 'Jack Grealish',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Jack Grealish.png',
+        value: 1
+    }
+    {
+        name: 'Allan Saint-Maximin',
+        club: 'Krish FC',
+        src: 'assests/player-image/Allan Saint-Maximin.png',
         value: 1
     }
 ],
@@ -65,6 +77,24 @@ player_assists = [
         name: 'Oleksandr Zinchenko',
         club: 'RS Football Club',
         src: 'assests/player-image/Oleksandr Zinchenko.png',
+        value: 1
+    },
+    {
+        name: 'Phil Foden',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Phil Foden.png',
+        value: 1
+    },
+    {
+        name: 'Ángel Correa',
+        club: 'Krish FC',
+        src: 'assests/player-image/Angel Correa.png',
+        value: 1
+    },
+    {
+        name: 'Raheem Sterling',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Raheem Sterling.png',
         value: 1
     }
 ],
