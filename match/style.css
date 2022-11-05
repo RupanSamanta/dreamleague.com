@@ -20,8 +20,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, transparent, rgba(56, 0, 60, 0.8), var(--purple), var(--purple), var(--purple));
-    margin-top: -120px;
+    background: linear-gradient(to bottom, transparent,  rgba(56, 0, 60, 0.8), var(--purple), var(--purple), var(--purple), var(--purple), var(--purple));
+    margin-top: -100px;
 }
 #match-section #ft {
     width: 150px;
@@ -87,7 +87,7 @@
     margin: 0 5px;
 }
 .timeline {
-    width: 300px;
+    width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -95,7 +95,7 @@
     margin: 5px auto;
 }
 .timeline p {
-    width: 33%;
+    width: 35%;
     display: block;
     margin: 10px 5px;
     font-size: 12px;
@@ -148,7 +148,7 @@
 #potm {
     background: linear-gradient(to right, var(--violet), var(--pink));
     border-radius: 5px;
-    width: 300px;
+    width: 320px;
     padding: 20px;
     margin: 40px auto;
 }
@@ -180,7 +180,7 @@
     margin-top: 15px;
 }
 #potm #name div:nth-child(2) {
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Bold';
     margin-top: -5px;
 }
@@ -241,7 +241,7 @@
     height: auto;
 }
 #lineups #field {
-    width: 300px;
+    width: 320px;
     height: 470px;
     background: url("../assests/images/lineup-pitch.jpg");
     background-size: 100% 100% !important;
