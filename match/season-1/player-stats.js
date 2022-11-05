@@ -46,7 +46,7 @@ var player_goals = [
         club: 'RS Football Club',
         src: 'assests/player-image/Jack Grealish.png',
         value: 1
-    }
+    },
     {
         name: 'Allan Saint-Maximin',
         club: 'Krish FC',
