@@ -9,7 +9,7 @@ var rsfootballclub = {
     total_tie: 0, tie: 0,
     total_lose: 0, lose: 0,
     total_gf: 4, gf: 4,
-    total_gc: 0, gc: 0,
+    total_gc: 1, gc: 1,
     total_possession: 65, possession: (47+73+70)/3, 
     total_shot: 22, shot: 22,
     total_shotTarget: 15, shotTarget: 15,
