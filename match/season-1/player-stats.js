@@ -33,7 +33,7 @@ var player_goals = [
         name: 'Lionel Messi',
         club: 'SSFC',
         src: 'assests/player-image/Lionel Messi.png',
-        value: 2
+        value: 3
     },
     {
         name: 'Ángel Correa',
@@ -51,6 +51,24 @@ var player_goals = [
         name: 'Allan Saint-Maximin',
         club: 'Krish FC',
         src: 'assests/player-image/Allan Saint-Maximin.png',
+        value: 1
+    },    
+    {
+        name: 'Lionel Messi',
+        club: 'Krish FC',
+        src: 'assests/player-image/Lionel Messi.png',
+        value: 1
+    },
+    {
+        name: 'Raheem Sterling',
+        club: 'SSFC',
+        src: 'assests/player-image/Raheem Sterling.png',
+        value: 1
+    },
+    {
+        name: 'Kylian Mbappé',
+        club: 'SSFC',
+        src: 'assests/player-image/Kylian Mbappe.png',
         value: 1
     }
 ],
@@ -95,6 +113,24 @@ player_assists = [
         name: 'Raheem Sterling',
         club: 'RS Football Club',
         src: 'assests/player-image/Raheem Sterling.png',
+        value: 1
+    },
+    {
+        name: 'Neymar Jr.',
+        club: 'SSFC',
+        src: 'assests/player-image/Neymar Jr.png',
+        value: 1
+    },
+    {
+        name: 'Kylian Mbappé',
+        club: 'SSFC',
+        src: 'assests/player-image/Kylian Mbappe.png',
+        value: 1
+    },   
+    {
+        name: 'Lionel Messi',
+        club: 'SSFC',
+        src: 'assests/player-image/Lionel Messi.png',
         value: 1
     }
 ],
