@@ -17,7 +17,19 @@ var rsfootballclub = {
     total_passCompletion: 84, passCompletion: (82+86+84)/3,
     total_foul: 2, foul: 2,
     total_yCard: 2, yCard: 2,
-    total_rCard: 0, rCard: 0
+    total_rCard: 0, rCard: 0,
+    annihilation: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 1, gc: 0,
+       score: [[1,0]]
+    },
+    ssfc: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 1, gc: 0,
+        score: [[1,0]]
+    },
+    krishfc: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 2, gc: 1,
+        score: [[2,1]]
+    }
 },
 annihilation = {
     name: 'Annihilation',
@@ -25,20 +37,32 @@ annihilation = {
     stadium: 'Vasio Stadium',
     stadiumCapacity: 35519,
     src: 'assests/team/anh.png',
-    match: 2, played: 2,
+    match: 3, played: 3,
     total_win: 0, win: 0,
     total_tie: 0, tie: 0,
-    total_lose: 2, lose: 2,
-    total_gf: 1, gf: 1,
-    total_gc: 3, gc: 3,
-    total_possession: 40, possession: (53+27/2),
-    total_shot: 3, shot: 3,
-    total_shotTarget: 1, shotTarget: 1,
+    total_lose: 3, lose: 3,
+    total_gf: 2, gf: 2,
+    total_gc: 6, gc: 6,
+    total_possession: 38, possession: (53+27+35)/3,
+    total_shot: 5, shot: 5,
+    total_shotTarget: 2, shotTarget: 2,
     total_cleansheet: 0, cleansheet: 0,
-    total_passCompletion: 57, passCompletion: (64+50)/2,
+    total_passCompletion: 55, passCompletion: (64+50+52)/3,
     total_foul: 1, foul: 1,
     total_yCard: 0, yCard: 0,
-    total_rCard: 0, rCard: 0
+    total_rCard: 0, rCard: 0,
+    rsfootballclub: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 0, gc: 1,
+        score: [[0,1]]
+    },
+    ssfc: {
+       played: 1, won: 0, lost: 0, draw: 1, gf: 1, gc: 3,
+        score: [[1,3]]    
+    },
+    krishfc: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 1, gc: 2,
+        score: [[1,2]]
+    }
 },
 ssfc = {
     name: 'SSFC',
@@ -46,20 +70,32 @@ ssfc = {
     stadium: 'Laura Stadium',
     stadiumCapacity: 92632,
     src: 'assests/team/ssfc.png',
-    match: 2, played: 2,
-    total_win: 1, win: 1,
+    match: 3, played: 3,
+    total_win: 2, win: 2,
     total_tie: 0, tie: 0,
     total_lose: 1, lose: 1,
-    total_gf: 3, gf: 3,
-    total_gc: 3, gc: 3,
-    total_possession: 53, possession: 53, 
-    total_shot: 5, shot: 5,
-    total_shotTarget: 4, shotTarget: 4,
+    total_gf: 6, gf: 6,
+    total_gc: 4, gc: 4,
+    total_possession: 59, possession: 59, 
+    total_shot: 9, shot: 9,
+    total_shotTarget: 7, shotTarget: 7,
     total_cleansheet: 0, cleansheet: 0,
-    total_passCompletion: 81, passCompletion: 81,
+    total_passCompletion: 83, passCompletion: 83,
     total_foul: 2, foul: 2,
     total_yCard: 0, yCard: 0,
-    total_rCard: 1, rCard: 1
+    total_rCard: 1, rCard: 1,
+    rsfootballclub: {
+       played: 1, won: 0, lost: 1, draw: 0, gf: 0, gc: 1,
+        score: [[0,1]]
+    },
+    annihilation: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 3, gc: 1,
+        score: [[3,1]]    
+    },
+    krishfc: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 3, gc: 2,
+        score: [[3,2]]
+    }
 },
 krishfc = {
     name: 'Krish FC',
@@ -80,7 +116,19 @@ krishfc = {
     total_passCompletion: 70, passCompletion: 70,
     total_foul: 7, foul: 7,
     total_yCard: 4, yCard: 4,
-    total_rCard: 2, rCard: 2
+    total_rCard: 2, rCard: 2,
+    rsfootballclub: {
+       played: 1, won: 0, lost: 1, draw: 0, gf: 1, gc: 2,
+        score: [[1,2]]
+    },
+    annihilation: {
+       played: 1, won: 1, lost: 0, draw: 0, gf: 2, gc: 1,
+        score: [[2,1]]    
+    },
+    ssfc: {
+       played: 1, won: 0, lost: 1, draw: 0, gf: 2, gc: 3,
+        score: [[2,3]]
+    }
 }
 ;
 
