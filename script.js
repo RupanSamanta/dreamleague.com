@@ -140,17 +140,18 @@ function displayTable(teamList, range) {
                     teamList[j] = temp;
                 }
             }
-            else if (pts > pt){
+            else if (pts < pt){
                 var temp = teamList[i];
                 teamList[i] = teamList[j];
                 teamList[j] = temp;
             }
         }
     }
-    for (let i = 0; i < teamList.length; i++) {
+    var ind = teamList.length;
+    for (let i = teamList.length-1; i >= 0; i--) {
         tr = document.createElement('tr');
         td = document.createElement('td');
-        td.innerHTML = i+1;
+        td.innerHTML = ind--;
         tr.appendChild(td);
         
         td = document.createElement('td');
