@@ -55,7 +55,7 @@ var player_goals = [
     },    
     {
         name: 'Lionel Messi',
-        club: 'Krish FC',
+        club: 'Annihilation',
         src: 'assests/player-image/Lionel Messi.png',
         value: 1
     },
