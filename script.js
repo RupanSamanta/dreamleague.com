@@ -147,11 +147,11 @@ function displayTable(teamList, range) {
             }
         }
     }
-    var ind = teamList.length;
+    var ind = 1;
     for (let i = teamList.length-1; i >= 0; i--) {
         tr = document.createElement('tr');
         td = document.createElement('td');
-        td.innerHTML = ind--;
+        td.innerHTML = ind++;
         tr.appendChild(td);
         
         td = document.createElement('td');
