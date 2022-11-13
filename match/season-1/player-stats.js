@@ -136,10 +136,16 @@ player_assists = [
 ],
 player_cleansheet = [
     {
-        name: 'Ederson',
+        name: 'Ederson Moraes',
         club: 'RS Football Club',
         src: 'assests/player-image/Ederson.png',
-        value: 2
+        value: 3
+    },
+    {
+        name: 'Alisson Becker',
+        club: 'SSFC',
+        src: 'assests/player-image/Alisson.png',
+        value: 1
     }
 ],
 season1_player_stats;
