@@ -37,31 +37,31 @@ annihilation = {
     stadium: 'Vasio Stadium',
     stadiumCapacity: 35519,
     src: 'assests/team/anh.png',
-    match: 3, played: 3,
+    match: 4, played: 4,
     total_win: 0, win: 0,
     total_tie: 0, tie: 0,
-    total_lose: 3, lose: 3,
+    total_lose: 4, lose: 4,
     total_gf: 2, gf: 2,
-    total_gc: 6, gc: 6,
-    total_possession: 38, possession: 38,
-    total_shot: 5, shot: 5,
-    total_shotTarget: 2, shotTarget: 2,
+    total_gc: 7, gc: 7,
+    total_possession: 43, possession: 43,
+    total_shot: 7, shot: 7,
+    total_shotTarget: 3, shotTarget: 3,
     total_cleansheet: 0, cleansheet: 0,
-    total_passCompletion: 55, passCompletion: 55,
+    total_passCompletion: 59, passCompletion: 59,
     total_foul: 1, foul: 1,
     total_yCard: 0, yCard: 0,
     total_rCard: 0, rCard: 0,
     rsfootballclub: {
-       played: 1, won: 1, lost: 0, draw: 0, gf: 0, gc: 1,
+       played: 1, won: 0, lost: 1, draw: 0, gf: 0, gc: 1,
         score: [[0,1]]
     },
     ssfc: {
-       played: 1, won: 0, lost: 0, draw: 1, gf: 1, gc: 3,
+       played: 1, won: 0, lost: 1, draw: 0, gf: 1, gc: 3,
         score: [[1,3]]    
     },
     krishfc: {
-       played: 1, won: 1, lost: 0, draw: 0, gf: 1, gc: 2,
-        score: [[1,2]]
+       played: 1, won: 0, lost: 2, draw: 0, gf: 1, gc: 3,
+        score: [[1,2], [0,1]]
     }
 },
 ssfc = {
@@ -103,18 +103,18 @@ krishfc = {
     stadium: 'Krish Stadium',
     stadiumCapacity: 15798,
     src: 'assests/team/ssfc.png',
-    match: 3, played: 3,
-    total_win: 1, win: 1,
+    match: 4, played: 4,
+    total_win: 2, win: 2,
     total_tie: 0, tie: 0,
     total_lose: 2, lose: 2,
-    total_gf: 5, gf: 5,
+    total_gf: 6, gf: 6,
     total_gc: 6, gc: 6,
-    total_possession: 39, possession: 39, 
-    total_shot: 13, shot: 13,
-    total_shotTarget: 12, shotTarget: 12,
-    total_cleansheet: 0, cleansheet: 0,
-    total_passCompletion: 70, passCompletion: 70,
-    total_foul: 7, foul: 7,
+    total_possession: 42, possession: 42, 
+    total_shot: 15, shot: 15,
+    total_shotTarget: 13, shotTarget: 13,
+    total_cleansheet: 1, cleansheet: 1,
+    total_passCompletion: 71, passCompletion: 71,
+    total_foul: 8, foul: 8,
     total_yCard: 4, yCard: 4,
     total_rCard: 2, rCard: 2,
     rsfootballclub: {
@@ -122,8 +122,8 @@ krishfc = {
         score: [[1,2]]
     },
     annihilation: {
-       played: 1, won: 1, lost: 0, draw: 0, gf: 2, gc: 1,
-        score: [[2,1]]    
+       played: 2, won: 2, lost: 0, draw: 0, gf: 3, gc: 1,
+        score: [[2,1], [1,0]]    
     },
     ssfc: {
        played: 1, won: 0, lost: 1, draw: 0, gf: 2, gc: 3,
