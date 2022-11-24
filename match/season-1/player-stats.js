@@ -70,6 +70,12 @@ var player_goals = [
         club: 'SSFC',
         src: 'assests/player-image/Kylian Mbappe.png',
         value: 1
+    },
+    {
+        name: 'Mohamed Salah',
+        club: 'Krish FC',
+        src: 'assests/player-image/Mohamed Salah.png',
+        value: 1
     }
 ],
 player_assists = [
@@ -132,6 +138,12 @@ player_assists = [
         club: 'SSFC',
         src: 'assests/player-image/Lionel Messi.png',
         value: 1
+    },
+    {
+        name: 'Neymar Jr.',
+        club: 'Krish FC',
+        src: 'assests/player-image/Neymar Jr.png',
+        value: 1
     }
 ],
 player_cleansheet = [
@@ -146,7 +158,14 @@ player_cleansheet = [
         club: 'SSFC',
         src: 'assests/player-image/Alisson.png',
         value: 1
-    }
+    },
+    {
+        name: 'Ederson Moraes',
+        club: 'Krish FC',
+        src: 'assests/player-image/Ederson.png',
+        value: 1
+    },
+    
 ],
 season1_player_stats;
 for (let i = 0; i < player_goals.length; i++) {
