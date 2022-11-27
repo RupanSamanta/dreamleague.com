@@ -76,6 +76,12 @@ var player_goals = [
         club: 'Krish FC',
         src: 'assests/player-image/Mohamed Salah.png',
         value: 1
+    },
+    {
+        name: 'Rodri',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Rodri.png',
+        value: 1
     }
 ],
 player_assists = [
@@ -144,6 +150,12 @@ player_assists = [
         club: 'Krish FC',
         src: 'assests/player-image/Neymar Jr.png',
         value: 1
+    },
+    {
+        name: 'Eden Hazard',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Eden Hazard.png',
+        value: 1
     }
 ],
 player_cleansheet = [
@@ -151,7 +163,7 @@ player_cleansheet = [
         name: 'Ederson Moraes',
         club: 'RS Football Club',
         src: 'assests/player-image/Ederson.png',
-        value: 3
+        value: 4
     },
     {
         name: 'Alisson Becker',
