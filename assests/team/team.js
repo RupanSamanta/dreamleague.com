@@ -53,7 +53,7 @@ annihilation = {
     total_rCard: 0, rCard: 0,
     rsfootballclub: {
        played: 1, won: 0, lost: 1, draw: 0, gf: 0, gc: 2,
-        score: [[0,1], [0,1]];
+        score: [[0,1], [0,1]]
     },
     ssfc: {
        played: 1, won: 0, lost: 1, draw: 0, gf: 1, gc: 3,
