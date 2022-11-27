@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Rupan Samanta">
+    <meta name="description" content="Annihilation v RS Football Club, Match 9, Season 1, Dream League">
+    <meta name="keywords" content="dls 22, dls cup">
+    <meta name="theme-color" content="#38003c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="UTF-8">
+    <link rel="shortcut icon" href="../../../assests/favicon-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/82872eeccd.js" crossorigin="anonymous"></script>
+    <title>Annihilation v RS Football Club, Season 1, Dream League</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="stadium-banner" id="logo-banner" style="background: url('../../../assests/images/Old_TraffordPOST.webp')">
+            <div>
+                <span>Sat 27 Nov 2022</span>
+                <span>Vasio Stadium</span>
+            </div>
+        </section>
+        <section id="match-section">
+            <div id="ft">FT</div>
+            <div id="logo-score">
+                <div id="logo"><img src="../../../assests/team/anh.png"></div>
+                <div id="name">ANN</div>
+                <div id="score">
+                    <span>0</span>
+                    <span>-</span>
+                    <span>1</span>
+                </div>
+                <div id="name">RFC</div>
+                <div id="logo"><img src="../../../assests/team/rsfc.png"></div>
+            </div>
+            <div class="timeline" id="other">
+                <p></p>
+                <p>
+                    <img src="../../../assests/images/ball.png">
+                </p>
+                <p>
+                    <span>Rodri 87'</span>
+                </p>
+            </div>
+            <div class="timeline" id="assists">
+                <p></p>
+                <p>
+                    <img src="../../../assests/images/boot.png">
+                </p>
+                <p>
+                    <span>E. Hazard 87'</span>
+                </p>
+            </div>
+        </section>
+        <section id="stats-lineup">
+            <div id="buttons">
+                <button disabled>Latest</button>
+                <button>Line-ups</button>
+                <button>Stats</button>
+            </div>
+            <div id="potm">
+                <div id="logo">
+                    <span>Dream</span>
+                    <img src="../../../assests/cup-logo-white.png">
+                    <span>League</span>
+                </div>
+                <div id="name">
+                    <div>Giorgio</div>
+                    <div>Chiellini</div>
+                </div>
+                <div id="player-img">
+                    <div id="player" style="background-image: url('../../../assests/player-image/Giorgio Chiellini.png')">
+                        <img src="../../../assests/team/anh.png">
+                    </div>
+                    <p></p>
+                    <div>Man of the Match</div>
+                    <p></p>
+                </div>
+            </div>
+            <div id="lineups">
+                <div id="team-logo"><img src="../../../assests/team/anh.png"></div>
+                <div id="field"></div>
+                <div id="team-logo"><img src="../../../assests/team/rsfc.png"></div>
+            </div>
+            <div id="stats">
+                <table>
+                    <tr>
+                        <td><img src="../../../assests/team/anh.png"></td>
+                        <td></td>
+                        <td><img src="../../../assests/team/rsfc.png"></td>
+                    </tr>
+                    <tr>
+                        <td>37%</td>
+                        <td>Possession</td>
+                        <td>63%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shots</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Shots on Target</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Corners</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>62%</td>
+                        <td>Pass Completion</td>
+                        <td>87%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Fouls</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Yellow Cards</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Red Cards</td>
+                        <td>0</td>
+                    </tr>                   
+                    <tr>
+                        <td>0</td>
+                        <td>Offsides</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </section>        
+        <section class="sect">
+            <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Table</div>
+            <div class="table-box"></div>
+        </section>
+        <section>
+            <div class="violet-border">
+                <div></div>            
+            </div>
+            <div class="heading">Powered by</div>
+            <div id="powered-by"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="../../../script.js"></script>
+<script src="../../../assests/team/team.js"></script>
+<script src="../../../fixtures-results/fixtures-results.js"></script>
+<script src="../../lineup.js"></script>
+<script>
+    footerElements(3);
+    headerElements(3);
+    var home_formation = [1, 4, 3, 3],
+    home_players = [
+        ['Schmeichel', 'GK'],
+        ['F. Mendy', 'LB'],
+        ['G. Chiellini', 'CB'],
+        ['K. Koulibaly', 'CB'],
+        ['M. Skriniar', 'RB'],
+        ['J. Sancho', 'CM'],
+        ['Pedri', 'CM'],
+        ['P. Dybala', 'CM'],
+        ['K. Mbappe', 'CF'],
+        ['L. Messi', 'CF'],
+        ['H. Kane', 'CF']
+    ],
+    away_formation = [1, 4, 2, 3, 1]
+    away_players = [
+        ['Ederson M.', 'GK'],
+        ['J. Alba', 'LB'],
+        ['A. Laporte', 'CB'],
+        ['R. Dias', 'CB'],
+        ['A. Arnold', 'RB'],
+        ['Casemiro', 'DM'],
+        ['Rodri', 'DM'],
+        ['J. Grealish', 'CM'],
+        ['P. Foden', 'CM'],
+        ['R. Mahrez', 'CM'],
+        ['K. De Bruyne', 'CF']
+    ];
+    printLineup(home_formation, home_players, away_formation, away_players);
+    displayTable(teams, 3);
+    displaySponsor(3);
+</script>
+</html>
