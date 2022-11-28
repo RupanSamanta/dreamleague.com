@@ -70,17 +70,17 @@ ssfc = {
     stadium: 'Laura Stadium',
     stadiumCapacity: 92632,
     src: 'assests/team/ssfc.png',
-    match: 4, played: 4,
-    total_win: 2, win: 2,
+    match: 5, played: 5,
+    total_win: 3, win: 3,
     total_tie: 1, tie: 1,
     total_lose: 1, lose: 1,
-    total_gf: 6, gf: 6,
-    total_gc: 4, gc: 4,
-    total_possession: 46, possession: 46, 
-    total_shot: 12, shot: 12,
-    total_shotTarget: 8, shotTarget: 8,
+    total_gf: 9, gf: 9,
+    total_gc: 6, gc: 6,
+    total_possession: 51, possession: 51, 
+    total_shot: 17, shot: 17,
+    total_shotTarget: 12, shotTarget: 12,
     total_cleansheet: 1, cleansheet: 1,
-    total_passCompletion: 76, passCompletion: 76,
+    total_passCompletion: 81, passCompletion: 81,
     total_foul: 3, foul: 3,
     total_yCard: 1, yCard: 1,
     total_rCard: 1, rCard: 1,
@@ -93,8 +93,8 @@ ssfc = {
         score: [[3,1]]    
     },
     krishfc: {
-       played: 1, won: 1, lost: 0, draw: 0, gf: 3, gc: 2,
-        score: [[3,2]]
+       played: 2, won: 2, lost: 0, draw: 0, gf: 6, gc: 4,
+        score: [[3,2], [3,2]]
     }
 },
 krishfc = {
@@ -103,17 +103,17 @@ krishfc = {
     stadium: 'Krish Stadium',
     stadiumCapacity: 15798,
     src: 'assests/team/ssfc.png',
-    match: 4, played: 4,
+    match: 5, played: 5,
     total_win: 2, win: 2,
     total_tie: 0, tie: 0,
-    total_lose: 2, lose: 2,
-    total_gf: 6, gf: 6,
-    total_gc: 6, gc: 6,
-    total_possession: 42, possession: 42, 
-    total_shot: 15, shot: 15,
-    total_shotTarget: 13, shotTarget: 13,
+    total_lose: 3, lose: 3,
+    total_gf: 8, gf: 8,
+    total_gc: 9, gc: 9,
+    total_possession: 44, possession: 44, 
+    total_shot: 19, shot: 19,
+    total_shotTarget: 16, shotTarget: 16,
     total_cleansheet: 1, cleansheet: 1,
-    total_passCompletion: 71, passCompletion: 71,
+    total_passCompletion: 73, passCompletion: 73,
     total_foul: 8, foul: 8,
     total_yCard: 4, yCard: 4,
     total_rCard: 2, rCard: 2,
@@ -126,8 +126,8 @@ krishfc = {
         score: [[2,1], [1,0]]    
     },
     ssfc: {
-       played: 1, won: 0, lost: 1, draw: 0, gf: 2, gc: 3,
-        score: [[2,3]]
+       played: 1, won: 0, lost: 2, draw: 0, gf: 4, gc: 6,
+        score: [[2,3], [2,3]]
     }
 }
 ;
