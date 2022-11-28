@@ -69,7 +69,7 @@ var player_goals = [
         name: 'Kylian Mbappé',
         club: 'SSFC',
         src: 'assests/player-image/Kylian Mbappe.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Mohamed Salah',
@@ -82,13 +82,37 @@ var player_goals = [
         club: 'RS Football Club',
         src: 'assests/player-image/Rodri.png',
         value: 1
+    },
+    {
+        name: 'Cristiano Ronaldo',
+        club: 'Krish FC',
+        src: 'assests/player-image/Cristiano Ronaldo.png',
+        value: 1
+    },
+    {
+        name: 'Kevin De Bruyne',
+        club: 'SSFC',
+        src: 'assests/player-image/Kevin De Bruyne.png',
+        value: 1
+    },
+    {
+        name: 'Erling Haaland',
+        club: 'Krish FC',
+        src: 'assests/player-image/Erling Haaland.png',
+        value: 1
+    },
+    {
+        name: 'Erling Haaland',
+        club: 'SSFC',
+        src: 'assests/player-image/Erling Haaland.png',
+        value: 1
     }
 ],
 player_assists = [
     {
-        name: 'Kevin De Bryune',
+        name: 'Kevin De Bruyne',
         club: 'RS Football Club',
-        src: 'assests/player-image/Kevin De Bryune.png',
+        src: 'assests/player-image/Kevin De Bruyne.png',
         value: 1
     },
     {
@@ -131,7 +155,7 @@ player_assists = [
         name: 'Neymar Jr.',
         club: 'SSFC',
         src: 'assests/player-image/Neymar Jr.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Kylian Mbappé',
@@ -149,12 +173,18 @@ player_assists = [
         name: 'Neymar Jr.',
         club: 'Krish FC',
         src: 'assests/player-image/Neymar Jr.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Eden Hazard',
         club: 'RS Football Club',
         src: 'assests/player-image/Eden Hazard.png',
+        value: 1
+    },
+    {
+        name: 'Vinicius Jr.',
+        club: 'SSFC',
+        src: 'assests/player-image/Vinicius Jr.png',
         value: 1
     }
 ],
