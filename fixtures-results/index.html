@@ -48,7 +48,7 @@
     for (let i=results.length; i<fixtures.length; i++) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], true, true);
     }
-    generateMatch(match_box, 'Final', {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}, {shortName: 'TBA', src: 'assests/team/tba.png'}, true, true);
+    generateMatch(match_box, 'Final', rsfootballclub, ssfc, true, true);
     for (let i=results.length-1; i>=0; i--) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], false, true);
     }
