@@ -4,7 +4,7 @@ var rsfootballclub = {
     stadium: 'RS City Stadium',
     stadiumCapacity: 92632,
     src: 'assests/team/rsfc.png',
-    match: 5, played: 5,
+    match: 6, played: 6,
     total_win: 5, win: 5,
     total_tie: 1, tie: 1,
     total_lose: 0, lose: 0,
