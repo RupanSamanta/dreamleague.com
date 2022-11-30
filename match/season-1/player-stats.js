@@ -3,7 +3,7 @@ var player_goals = [
         name: 'Phil Foden',
         club: 'RS Football Club',
         src: 'assests/player-image/Phil Foden.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Diogo Jota',
@@ -106,6 +106,12 @@ var player_goals = [
         club: 'SSFC',
         src: 'assests/player-image/Erling Haaland.png',
         value: 1
+    },
+    {
+        name: 'Erling Haaland',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Erling Haaland.png',
+        value: 1
     }
 ],
 player_assists = [
@@ -186,6 +192,18 @@ player_assists = [
         club: 'SSFC',
         src: 'assests/player-image/Vinicius Jr.png',
         value: 1
+    },
+    {
+        name: 'Riyad Mahrez',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Riyad Mahrez.png',
+        value: 1
+    },
+    {
+        name: 'Bernardo Silva',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Bernardo Silva.png',
+        value: 1
     }
 ],
 player_cleansheet = [
@@ -193,7 +211,7 @@ player_cleansheet = [
         name: 'Ederson Moraes',
         club: 'RS Football Club',
         src: 'assests/player-image/Ederson.png',
-        value: 4
+        value: 5
     },
     {
         name: 'Alisson Becker',
