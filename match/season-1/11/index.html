@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Rupan Samanta">
+    <meta name="description" content=" RS Football Club v Krish FC, Match 11, Season 1, Dream League">
+    <meta name="keywords" content="dls 22, dls cup">
+    <meta name="theme-color" content="#38003c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="UTF-8">
+    <link rel="shortcut icon" href="../../../assests/favicon-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/82872eeccd.js" crossorigin="anonymous"></script>
+    <title>RS Football Club v Krish FC, Season 1, Dream League</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="stadium-banner" id="logo-banner" style="background: url('../../../assests/images/Etihad.webp')">
+            <div>
+                <span>Wed 30 Nov 2022</span>
+                <span>RS City Stadium</span>
+            </div>
+        </section>
+        <section id="match-section">
+            <div id="ft">FT</div>
+            <div id="logo-score">
+                <div id="logo"><img src="../../../assests/team/rsfc.png"></div>
+                <div id="name">RFC</div>
+                <div id="score">
+                    <span>2</span>
+                    <span>-</span>
+                    <span>0</span>
+                </div>
+                <div id="name">KFC</div>
+                <div id="logo"><img src="../../../assests/team/ssfc.png"></div>
+            </div>
+            <div class="timeline" id="other">
+                <p>
+                    <span>P. Foden 66'</span>
+                    <span>E. Haaland 81'</span>
+                </p>
+                <p>
+                    <img src="../../../assests/images/ball.png">
+                </p>
+                <p></p>
+            </div>
+            <div class="timeline" id="other">
+                <p></p>
+                <p>
+                    <img src="../../../assests/images/red-card.png">
+                </p>
+                <p>
+                   <span>V. van Djik 55'
+                </p>
+            </div>
+            <div class="timeline" id="assists">
+                <p>
+                    <span>R. Mahrez 66'</span>
+                    <span>B. Silva 81'</span>
+                </p>
+                <p>
+                    <img src="../../../assests/images/boot.png">
+                </p>
+                <p></p>
+            </div>
+        </section>
+        <section id="stats-lineup">
+            <div id="buttons">
+                <button disabled>Latest</button>
+                <button>Line-ups</button>
+                <button>Stats</button>
+            </div>
+            <div id="potm">
+                <div id="logo">
+                    <span>Dream</span>
+                    <img src="../../../assests/cup-logo-white.png">
+                    <span>League</span>
+                </div>
+                <div id="name">
+                    <div>Bernardo</div>
+                    <div>Silva</div>
+                </div>
+                <div id="player-img">
+                    <div id="player" style="background-image: url('../../../assests/player-image/Bernardo Silva.png')">
+                        <img src="../../../assests/team/rsfc.png">
+                    </div>
+                    <p></p>
+                    <div>Man of the Match</div>
+                    <p></p>
+                </div>
+            </div>
+            <div id="lineups">
+                <div id="team-logo"><img src="../../../assests/team/rsfc.png"></div>
+                <div id="field"></div>
+                <div id="team-logo"><img src="../../../assests/team/ssfc.png"></div>
+            </div>
+            <div id="stats">
+                <table>
+                    <tr>
+                        <td><img src="../../../assests/team/rsfc.png"></td>
+                        <td></td>
+                        <td><img src="../../../assests/team/ssfc.png"></td>
+                    </tr>
+                    <tr>
+                        <td>59%</td>
+                        <td>Possession</td>
+                        <td>41%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shots</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shots on Target</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Corners</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>82%</td>
+                        <td>Pass Completion</td>
+                        <td>68%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Fouls</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Yellow Cards</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Red Cards</td>
+                        <td>1</td>
+                    </tr>                   
+                    <tr>
+                        <td>0</td>
+                        <td>Offsides</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+        </section>        
+        <section class="sect">
+            <div class="violet-border">
+                <div></div>
+            </div>
+            <div class="heading">Table</div>
+            <div class="table-box"></div>
+        </section>
+        <section>
+            <div class="violet-border">
+                <div></div>            
+            </div>
+            <div class="heading">Powered by</div>
+            <div id="powered-by"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="../../../script.js"></script>
+<script src="../../../assests/team/team.js"></script>
+<script src="../../../fixtures-results/fixtures-results.js"></script>
+<script src="../../lineup.js"></script>
+<script>
+    footerElements(3);
+    headerElements(3);
+    var home_formation = [1, 3, 4, 3],
+    home_players = [
+        ['Ederson M.', 'GK'],
+        ['A. Laporte', 'CB'],
+        ['R. Dias', 'CB'],
+        ['J. Cancelo', 'CB'],
+        ['P. Foden', 'LM'],
+        ['K. De Bruyne', 'CM'],
+        ['Rodri', 'CM'],
+        ['B. Silva', 'RM'],
+        ['J. Grealish', 'CF'],
+        ['E. Haaland', 'CF'],
+        ['R. Mahrez', 'CF']
+    ],
+    away_formation = [1, 4, 3, 3],
+    away_players = [
+        ['Ederson M.', 'GK'],
+        ['D. Rugani', 'LB'],
+        ['I. Marcano', 'CB'],
+        ['T. Silva', 'CB'],
+        ['A. Szalai', 'RB'],
+        ['S. Mane', 'CM'],
+        ['L. Modric', 'CM'],
+        ['K. Benzema', 'CM'],
+        ['M. Salah', 'WF'],
+        ['C. Ronaldo', 'CF'],
+        ['A. Fati', 'WF']
+    ];
+    printLineup(home_formation, home_players, away_formation, away_players);
+    displayTable(teams, 3);
+    displaySponsor(3);
+</script>
+</html>
