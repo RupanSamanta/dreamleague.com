@@ -255,3 +255,30 @@ function headerElements(ext) {
             <i class="fa-solid fa-bars"></i>
         </div>`;
 }
+function filter(head, child, array, type, str) {
+    let div = document.createElement('div'),
+    select = document.createElement('select'),
+    option = document.createElement('option');
+    option.value = 'all';
+    option.innerHTML = 'All '+str;
+    select.appendChild(option);
+    for (let i=0; i<array.length; i++) {
+        option = document.createElement('option');
+        option.value = array[i][0];
+        option.innerHTML = array[i][1];  
+        select.appendChild(option);      
+    }
+    select.addEventListener('change', function () {
+        for (let i = 0; i < child.length; i++)
+            if (child[i].textContent.search(select.value) == -1)
+                child[i].style.display = 'none';           
+            else {
+                child[i].style.display = 'none';
+                child[i].style.display = type;
+            }
+        if (select.value == 'all')
+            for (let i = 0; i < child.length; i++)
+                child[i].style.display = type;
+    });
+    head.appendChild(select);
+}
