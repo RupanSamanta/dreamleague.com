@@ -22,7 +22,10 @@
             <div class="violet-border">
                 <div></div>
             </div>
-            <div class="heading">All News</div>
+            <div class="heading">
+                 <span>All News</span>
+                 <div class="select-box"></div>
+            </div>
             <div class="news-box"></div>
         </section>
         <section>
@@ -42,5 +45,9 @@
     displaySponsor(1);
     footerElements(1);
     headerElements(1);
+    var arr = [
+         ['League News', 'League News'], ['Club News', 'Club News'], ['Player News', 'Player News']
+    ];
+    filter(document.getElementsByClassName('select-box')[0], document.querySelectorAll('.news-box')[0].querySelectorAll('.news'), arr, 'flex', 'News');
 </script>
 </html>
