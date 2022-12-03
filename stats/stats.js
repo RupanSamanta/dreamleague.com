@@ -3,7 +3,7 @@ club = [
     allTeams, shots, targetShot, pass_completion, cleansheet        
 ],
 stats_titles = [
-    'Goals', 'Shots', 'Shots on Target',
+    'Goals', 'Total Shots', 'Shots on Target',
     'Pass Completion', 'Cleansheets'
 ],
 player_stats_title = [
