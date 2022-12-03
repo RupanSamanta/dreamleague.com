@@ -282,3 +282,40 @@ function filter(head, child, array, type, str) {
     });
     head.appendChild(select);
 }
+function close() {
+    document.body.style.background = 'var(--purple)';
+    let close = document.getElementById('close'),
+    block = document.getElementById('winner'),
+    arr = [
+        document.querySelectorAll('header')[0],
+        document.querySelectorAll('footer')[0],
+        document.querySelectorAll('main')[0]
+        ];
+    for (let i = 0; i < arr.length; i++) {
+        arr[i].style.display = 'none';
+        arr[i].style.opacity = 0;
+        arr[i].style.transitionDuration = '0.4s';
+    }
+    var img = new Image();
+    img.src = 'banner.png';
+    img.onload = function () {
+        console.log('Loaded');
+        block.style.opacity = 1;
+        close.style.display = 'block';
+        setTimeout(function () {
+            close.style.opacity = 1;
+        }, 1000);
+    }
+    close.onclick = function () {
+        block.style.opacity = 0;
+        arr[0].style.display = 'flex';
+        arr[1].style.display = 'block';
+        arr[2].style.display = 'block';
+        setTimeout(function () {
+            block.style.display = 'none';
+            for (let i = 0; i < arr.length; i++)
+                arr[i].style.opacity = 1;
+            document.body.style.background = 'white';
+        }, 1000);
+    }
+}
