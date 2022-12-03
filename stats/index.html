@@ -22,14 +22,20 @@
             <div class="violet-border">
                 <div></div>
             </div>
-            <div class="heading">Player Stats</div>
+            <div class="heading">                   
+                <span>Player Stats</span>
+                <div class="select-box"></div>
+            </div>
             <div class="stats-box"></div>
         </section>
         <section>
             <div class="violet-border">
                 <div></div>
             </div>
-            <div class="heading">Club Stats</div>
+            <div class="heading">                   
+                <span>Club Stats</span>
+                <div class="select-box"></div>
+            </div>
             <div class="stats-box"></div>
         </section>
         <section>
@@ -51,5 +57,14 @@
     displaySponsor(1);
     footerElements(1);
     headerElements(1);
+    var stats_box = document.querySelectorAll('.stats-box'), arr = [];
+    for (let i=0; i<player_stats_title.length; i++)
+        arr.push([player_stats_title[i], player_stats_title[i]]);
+
+    filter(document.getElementsByClassName('select-box')[0], stats_box[0].querySelectorAll('.stats'), arr, 'block', 'Stats');
+    arr = [];
+    for (let i=0; i<stats_titles.length; i++)
+        arr.push([stats_titles[i], stats_titles[i]]);
+    filter(document.getElementsByClassName('select-box')[1], stats_box[1].querySelectorAll('.stats'), arr, 'block', 'Stats');
 </script>
 </html>
