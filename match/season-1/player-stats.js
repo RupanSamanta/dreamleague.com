@@ -93,7 +93,7 @@ var player_goals = [
         name: 'Kevin De Bruyne',
         club: 'SSFC',
         src: 'assests/player-image/Kevin De Bruyne.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Erling Haaland',
