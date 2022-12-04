@@ -297,7 +297,7 @@ function close() {
         arr[i].style.transitionDuration = '0.4s';
     }
     var img = new Image();
-    img.src = 'assests/images/banner.png';
+    img.src = 'assests/images/banner.jpg';
     img.onload = function () {
         console.log('Loaded');
         block.style.opacity = 1;
