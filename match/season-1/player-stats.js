@@ -21,7 +21,7 @@ var player_goals = [
         name: 'Paulo Dybala',
         club: 'Annihilation',
         src: 'assests/player-image/Paulo Dybala.png',
-        value: 1
+        value: 2
     },
     {
         name: 'Riyad Mahrez',
