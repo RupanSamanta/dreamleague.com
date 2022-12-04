@@ -32,7 +32,7 @@ function generateMatch(m, no, team1, team2, type, ext) {
     var match = document.createElement('div'),
     div = document.createElement('div');
     match.className = 'match';
-    div.innerHTML = no=="Final"?'Final':'Match '+(no+1);
+    div.innerHTML = no == results.length-1 ? 'Final' : 'Match '+(no+1);
     match.appendChild(div);
     div = document.createElement('div');
     div.innerHTML = '<span>'+team1.shortName+'</span>';
@@ -52,7 +52,7 @@ function generateMatch(m, no, team1, team2, type, ext) {
         </p>`;
         m = m[1];
         match.onclick = function () {
-            window.open('https://rupansamanta.github.io/dreamleague.com/match/season-1/'+(no=="Final"?'final':(no+1)), '_self');
+            window.open('https://rupansamanta.github.io/dreamleague.com/match/season-1/'+(no==results.length-1?'final':(no+1)), '_self');
         }
     }
     if (ext)
