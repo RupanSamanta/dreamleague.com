@@ -69,7 +69,7 @@ var player_goals = [
         name: 'Kylian Mbappé',
         club: 'SSFC',
         src: 'assests/player-image/Kylian Mbappe.png',
-        value: 2
+        value: 3
     },
     {
         name: 'Mohamed Salah',
@@ -111,6 +111,18 @@ var player_goals = [
         name: 'Erling Haaland',
         club: 'RS Football Club',
         src: 'assests/player-image/Erling Haaland.png',
+        value: 1
+    },
+    {
+        name: 'Cristiano Ronaldo',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Cristiano Ronaldo.png',
+        value: 1
+    },
+    {
+        name: 'Ruben Dias',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Ruben Dias.png',
         value: 1
     }
 ],
@@ -204,6 +216,24 @@ player_assists = [
         club: 'RS Football Club',
         src: 'assests/player-image/Bernardo Silva.png',
         value: 1
+    },
+    {
+        name: 'Neymar Jr.',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Neymar Jr.png',
+        value: 2
+    },
+    {
+        name: 'Lionel Messi',
+        club: 'RS Football Club',
+        src: 'assests/player-image/Lionel Messi.png',
+        value: 2
+    },
+    {
+        name: 'Virgil van Djik',
+        club: 'SSFC',
+        src: 'assests/player-image/Virgil van Djik.png',
+        value: 1
     }
 ],
 player_cleansheet = [
@@ -238,12 +268,10 @@ season1_player_stats = [
 
 ];
 for(let a = 0; a < season1_player_stats.length; i++)
-for (let i = 0; i < season1_player_stats[a].length; i++) {
-   for (let j = 0; j < season1_player_stats[i].length; j++) {
-        if (season1_player_stats[i].value > season1_player_stats[j].value) {
-            var temp = season1_player_stats[i];
-            season1_player_stats[i] = season1_player_stats[j];
-            season1_player_stats[j] = temp;
+   for (let i = 0; i < season1_player_stats[a].length; i++)
+      for (let j = 0; j < season1_player_stats[a].length; j++)
+        if (season1_player_stats[a][i].value > season1_player_stats[a][j].value) {
+            var temp = season1_player_stats[a][i];
+            season1_player_stats[a][i] = season1_player_stats[a][j];
+            season1_player_stats[a][j] = temp;
         }
-    }
-}
