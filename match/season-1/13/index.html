@@ -15,7 +15,7 @@
 <body>
     <header></header>
     <main>
-        <section class="stadium-banner" id="logo-banner" style="background: url('../../../assests/images/Etihad.webp')">
+        <section class="stadium-banner" id="logo-banner" style="background: url('../../../assests/images/Old_TraffordPOST.webp')">
             <div>
                 <span>Sun 4 Dec 2022</span>
                 <span>RS City Stadium</span>
@@ -28,7 +28,7 @@
                 <div id="name">RFC</div>
                 <div id="score">
                     <span>4</span>
-                    <span>-</span
+                    <span>-</span>
                     <span>1</span>
                 </div>
                 <div id="name">SFC</div>
@@ -36,7 +36,7 @@
             </div>
             <div class="timeline" id="other">
                 <p>
-                    <span>C. Ronaldo 45', 71', 90'</span>
+                    <span>C. Ronaldo 45',71',90'</span>
                     <span>R. Dias 84'</span>
                 </p>
                 <p>
@@ -48,8 +48,8 @@
             </div>
             <div class="timeline" id="assists">
                 <p>
-                    <span>Neymar Jr. 45', 71'</span>
-                    <span>L. Messi 84', 90'</span>
+                    <span>Neymar Jr. 45',71'</span>
+                    <span>L. Messi 84',90'</span>
                 </p>
                 <p>
                     <img src="../../../assests/images/boot.png">
@@ -67,13 +67,13 @@
             </div>
             <div id="potm">
                 <div id="logo">
-                    <span>Dream</span>
-                    <img src="../../../assests/cup-logo-white.png">
-                    <span>League</span>
+                    <span></span>
+                    <img src="../../../assests/logo-horizontal.png">
+                    <span></span>
                 </div>
                 <div id="name">
-                    <div></div>
-                    <div></div>
+                    <div>Cristiano</div>
+                    <div>Ronaldo</div>
                 </div>
                 <div id="player-img">
                     <div id="player" style="background-image: url('../../../assests/player-image/Cristiano Ronaldo.png')">
@@ -166,26 +166,28 @@
 <script src="../../../fixtures-results/fixtures-results.js"></script>
 <script src="../../lineup.js"></script>
 <script>
+    footerElements(3);
+    headerElements(3);
     var home_formation = [1, 4, 3, 3],
     home_players = [
-        ['Ederson', 'GK'],
-        ['Sandro', 'LB'],
-        ['Laporte', 'CB'],
-        ['Dias', 'CB'],
+        ['Ederson M.', 'GK'],
+        ['A. Sandro', 'LB'],
+        ['A. Laporte', 'CB'],
+        ['R. Dias', 'CB'],
         ['A. Arnold', 'RB'],
         ['P. Coutinho', 'CM'],
         ['L. Modric', 'CM'],
-        ['K. De Bryune', 'CM'],        
+        ['K. De Bruyne', 'CM'],
         ['Neymar Jr.', 'WF'],
         ['C. Ronaldo', 'CF'],
-        ['L. Messi', 'WF']
+        ['L. Messi', 'CF']
     ],
-    away_formation = [1, 4, 1, 2, 3],
+    away_formation = [1, 4, 2, 1, 3]
     away_players = [
         ['Alisson B.', 'GK'],
         ['F. Mendy', 'LB'],
+        ['V. van Djik', 'CB'],
         ['E. Militão', 'CB'],
-        ['V. Van Djik', 'CB'],
         ['J. Cancelo', 'RB'],
         ['L. Modric', 'DM'],
         ['P. Dybala', 'CM'],
@@ -197,7 +199,5 @@
     printLineup(home_formation, home_players, away_formation, away_players);
     displayTable(teams, 3);
     displaySponsor(3);
-    footerElements(3);
-    headerElements(3);
 </script>
 </html>
