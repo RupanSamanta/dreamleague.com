@@ -73,11 +73,27 @@
         </section>
     </main>
     <footer></footer>
+    <div id="winner">
+        <canvas id="canvas"></canvas>
+        <div>
+            <img src="assests/logo-horizontal.png" id="win-logo">
+            <figure id="figure">
+                <img src="assests/team/rsfc.png"></img>
+                <figcaption>RS Football Club</figcaption>
+            </figure>
+            <span>CHAMPIONS</span>
+            <span>Season 1</span>
+        </div>
+        <button id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
 </body>
 <script src="assests/team/team.js"></script>
 <script src="fixtures-results/fixtures-results.js"></script>
 <script src="script.js"></script>
 <script src="news/news.js"></script>
+<script src="assests/fireworks.js"></script>
 <script>
     /*for (let i=results.length; i<fixtures.length; i++) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], true, false);
@@ -93,6 +109,6 @@
     displayTable(teams, 0);
     generateNews(4);
     footerElements(0);
-    headerElements(0);
+    headerElements(0); close();
 </script>
 </html>
