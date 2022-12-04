@@ -267,7 +267,7 @@ season1_player_stats = [
   player_goals, player_assists, player_cleansheet
 
 ];
-for(let a = 0; a < season1_player_stats.length; i++)
+for(let a = 0; a < season1_player_stats.length; a++)
    for (let i = 0; i < season1_player_stats[a].length; i++)
       for (let j = 0; j < season1_player_stats[a].length; j++)
         if (season1_player_stats[a][i].value > season1_player_stats[a][j].value) {
