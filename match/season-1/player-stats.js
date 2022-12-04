@@ -117,7 +117,7 @@ var player_goals = [
         name: 'Cristiano Ronaldo',
         club: 'RS Football Club',
         src: 'assests/player-image/Cristiano Ronaldo.png',
-        value: 1
+        value: 3
     },
     {
         name: 'Ruben Dias',
