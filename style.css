@@ -418,7 +418,7 @@ select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("banner.png");
+    background: url("assests/images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99999;
