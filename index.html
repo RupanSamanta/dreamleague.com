@@ -30,7 +30,7 @@
             <div class="heading">Teams</div>
             <div class="teams-box"></div>
         </section>
-        <section class="sect">
+        <!--section class="sect">
             <div class="violet-border">
                 <div></div>
             </div>
@@ -39,7 +39,7 @@
             <div class="view-more">
                 <button onclick="window.open('https://rupansamanta.github.io/dreamleague.com/fixtures-results/', '_self')">View More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
-        </section>
+        </section-->
         <section class="sect">
             <div class="violet-border">
                 <div></div>
@@ -79,13 +79,13 @@
 <script src="script.js"></script>
 <script src="news/news.js"></script>
 <script>
-    for (let i=results.length; i<fixtures.length; i++) {
+    /*for (let i=results.length; i<fixtures.length; i++) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], true, false);
-    }
+    }*/
     for (let i=results.length-1; i>=results.length-4; i--) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], false, false);
     }
-    generateMatch(match_box, 'Final', rsfootballclub, ssfc, true, false);
+    generateMatch(match_box, 'Final', rsfootballclub, ssfc, false, false);
     for (let i=0; i<teams.length; i++) {
         displayTeams(teams[i]);
     }   
