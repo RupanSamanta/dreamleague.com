@@ -225,6 +225,12 @@ player_cleansheet = [
         src: 'assests/player-image/Ederson.png',
         value: 1
     },
+    {
+        name: 'Kasper Schmeichel',
+        club: 'Annihilation',
+        src: 'assests/player-image/Kasper Schmeichel.png',
+        value: 1
+    }
     
 ],
 season1_player_stats;
