@@ -27,35 +27,37 @@
                 <div id="logo"><img src="../../../assests/team/rsfc.png"></div>
                 <div id="name">RFC</div>
                 <div id="score">
-                    <!-- span>1</span>
-                    <span>-</span-->
-                    <span>V</span>
+                    <span>4</span>
+                    <span>-</span
+                    <span>1</span>
                 </div>
                 <div id="name">SFC</div>
                 <div id="logo"><img src="../../../assests/team/ssfc.png"></div>
             </div>
-            <!--div class="timeline" id="other">
+            <div class="timeline" id="other">
                 <p>
-                    <span>Foden 86'</span>
+                    <span>C. Ronaldo 45', 71', 90'</span>
+                    <span>R. Dias 84'</span>
                 </p>
                 <p>
                     <img src="../../../assests/images/ball.png">
                 </p>
                 <p>
-                    <span></span>
+                    <span>K. Mbappé 53'</span>
                 </p>
             </div>
             <div class="timeline" id="assists">
                 <p>
-                    <span>De Bryune 86'</span>
+                    <span>Neymar Jr. 45', 71'</span>
+                    <span>L. Messi 84', 90'</span>
                 </p>
                 <p>
                     <img src="../../../assests/images/boot.png">
                 </p>
                 <p>
-                    <span></span>
+                    <span>V. van Djik 53'</span>
                 </p>
-            </div-->
+            </div>
         </section>
         <section id="stats-lineup">
             <div id="buttons">
@@ -74,8 +76,8 @@
                     <div></div>
                 </div>
                 <div id="player-img">
-                    <div id="player" style="background-image: url('../../../assests/player-image/Photo-Missing.png')">
-                        <img src="../../../assests/team/tba.png">
+                    <div id="player" style="background-image: url('../../../assests/player-image/Cristiano Ronaldo.png')">
+                        <img src="../../../assests/team/rsfc.png">
                     </div>
                     <p></p>
                     <div>Man of the Match</div>
@@ -95,34 +97,34 @@
                         <td><img src="../../../assests/team/ssfc.png"></td>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td>63%</td>
                         <td>Possession</td>
-                        <td>0</td>
+                        <td>37%</td>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td>8</td>
                         <td>Shots</td>
-                        <td>0</td>
+                        <td>2</td>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td>7</td>
                         <td>Shots on Target</td>
-                        <td>0</td>
+                        <td>1</td>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td>2</td>
                         <td>Corners</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td>81%</td>
                         <td>Pass Completion</td>
-                        <td>0</td>
+                        <td>66%</td>
                     </tr>
                     <tr>
                         <td>0</td>
                         <td>Fouls</td>
-                        <td>0</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td>0</td>
@@ -137,7 +139,7 @@
                     <tr>
                         <td>0</td>
                         <td>Offsides</td>
-                        <td>0</td>
+                        <td>1</td>
                     </tr>
                 </table>
             </div>
@@ -172,25 +174,25 @@
         ['Dias', 'CB'],
         ['A. Arnold', 'RB'],
         ['P. Coutinho', 'CM'],
-        ['K. De Bryune', 'CM'],
         ['L. Modric', 'CM'],
+        ['K. De Bryune', 'CM'],        
         ['Neymar Jr.', 'WF'],
         ['C. Ronaldo', 'CF'],
         ['L. Messi', 'WF']
     ],
-    away_formation = [1, 4, 4, 2],
+    away_formation = [1, 4, 1, 2, 3],
     away_players = [
-        ['Alisson', 'GK'],
-        ['Mendy', 'LB'],
-        ['Militão', 'CB'],
-        ['Van Djik', 'CB'],
-        ['Cancelo', 'RB'],
-        ['Dybala', 'LM'],
-        ['Benzema', 'CM'],
-        ['Modric', 'CM'],
-        ['De Bryune', 'RM'],
-        ['Haaland', 'CF'],
-        ['Messi', 'CF']
+        ['Alisson B.', 'GK'],
+        ['F. Mendy', 'LB'],
+        ['E. Militão', 'CB'],
+        ['V. Van Djik', 'CB'],
+        ['J. Cancelo', 'RB'],
+        ['L. Modric', 'DM'],
+        ['P. Dybala', 'CM'],
+        ['K. De Bruyne', 'CM'],
+        ['Neymar Jr.', 'CF'],
+        ['L. Messi', 'CF'],
+        ['K. Mbappé', 'CF']
     ];
     printLineup(home_formation, home_players, away_formation, away_players);
     displayTable(teams, 3);
