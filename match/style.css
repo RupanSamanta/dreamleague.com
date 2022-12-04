@@ -95,7 +95,7 @@
     margin: 5px auto;
 }
 .timeline p {
-    width: 35%;
+    width: 40%;
     display: block;
     margin: 10px 5px;
     font-size: 12px;
@@ -106,7 +106,7 @@
     flex-direction: column;
 }
 .timeline p:nth-child(2) {
-    width: 10%;
+    width: 8%;
     align-items: center;
 }
 .timeline p:last-child {
