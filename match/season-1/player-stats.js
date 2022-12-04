@@ -233,16 +233,17 @@ player_cleansheet = [
     }
     
 ],
-season1_player_stats;
-for (let i = 0; i < player_goals.length; i++) {
-   for (let j = 0; j < player_goals.length; j++) {
-        if (player_goals[i].value > player_goals[j].value) {
-            var temp = player_goals[i];
-            player_goals[i] = player_goals[j];
-            player_goals[j] = temp;
+season1_player_stats = [
+  player_goals, player_assists, player_cleansheet
+
+];
+for(let a = 0; a < season1_player_stats.length; i++)
+for (let i = 0; i < season1_player_stats[a].length; i++) {
+   for (let j = 0; j < season1_player_stats[i].length; j++) {
+        if (season1_player_stats[i].value > season1_player_stats[j].value) {
+            var temp = season1_player_stats[i];
+            season1_player_stats[i] = season1_player_stats[j];
+            season1_player_stats[j] = temp;
         }
     }
 }
-season1_player_stats = [
-    player_goals, player_assists, player_cleansheet
-];
