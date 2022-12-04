@@ -17,7 +17,7 @@
         <section class="site-heading" id="logo-banner">
             Fixtures and Results
         </section>
-        <section>
+        <section style="display: none">
             <div class="violet-border">
                 <div></div>
             </div>
@@ -51,21 +51,17 @@
 <script src="../fixtures-results/fixtures-results.js"></script>
 <script src="../script.js"></script>
 <script>
-    for (let i=results.length; i<fixtures.length; i++) {
-        generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], true, true);
-    }
-    generateMatch(match_box, 'Final', rsfootballclub, ssfc, true, true);
+    headerElements(1);
+    footerElements(1);
     for (let i=results.length-1; i>=0; i--) {
         generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], false, true);
     }
     displaySponsor(1);
-    headerElements(1);
-    footerElements(1);
     var match_box = document.querySelectorAll('.match-box'), arr = [];
     for (let i=0; i<teams.length; i++)
         arr.push([teams[i].shortName, teams[i].name]);
         
-    filter(document.getElementsByClassName('select-box')[0], match_box[0].querySelectorAll('.match'), arr, 'block', 'Clubs');    
+    //filter(document.getElementsByClassName('select-box')[0], match_box[0].querySelectorAll('.match'), arr, 'block', 'Clubs');    
     filter(document.getElementsByClassName('select-box')[1], match_box[1].querySelectorAll('.match'), arr, 'block', 'Clubs');
 </script>
 </html>
