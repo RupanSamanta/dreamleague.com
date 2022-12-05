@@ -37,7 +37,7 @@
                 <button onclick="window.open('https://rupansamanta.github.io/dreamleague.com/fixtures-results/', '_self')">View More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
         </section>
-        <section class="sect">
+        <section class="sect" style="display: none">
             <div class="violet-border">
                 <div></div>
             </div>
@@ -100,9 +100,9 @@
     for (let i=results.length; i<5; i++) {
         generateMatch(match_box, i, 1, fixtures[1][i][0], fixtures[1][i][1], true, false);
     }
-    for (let i=results.length-1; i>=results.length-4; i--) {
+    /*for (let i=results.length-1; i>=results.length-4; i--) {
         generateMatch(match_box, i, 1, fixtures[1][i][0], fixtures[1][i][1], false, false);
-    }
+    }*/
     displaySponsor(0);
     displayTable(teams, 0);
     generateNews(news_list.length < 4 ? news_list.length:4, 0);
