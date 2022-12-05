@@ -28,7 +28,7 @@ window.onscroll = function () {
         header.classList.remove('sticky');
     }
 }
-function generateMatch(m, no, team1, team2, type, ext) {
+function generateMatch(m, no, s, team1, team2, type, ext) {
     var match = document.createElement('div'),
     div = document.createElement('div');
     match.className = 'match';
@@ -48,7 +48,7 @@ function generateMatch(m, no, team1, team2, type, ext) {
     }
     else {
         div.innerHTML += `<p id="done">
-            <span>`+results[no][0]+`</span><span>-</span><span>`+results[no][1]+`</span>
+            <span>`+results[s][no][0]+`</span><span>-</span><span>`+results[s][no][1]+`</span>
         </p>`;
         m = m[1];
         match.onclick = function () {
