@@ -12,8 +12,8 @@ player_stats_title = [
 stats_box = document.getElementsByClassName('stats-box');
 
 for (let k = 0; k < club.length; k++) {
-for (let i = 0; i < teams.length; i++) 
-    club[k].push(teams[i]);
+for (let i = 0; i < stats_teams[0].length; i++) 
+    club[k].push(stats_teams[0][i]);
    
 for (let i = 0; i < club[k].length; i++) {
     for (let j = 0; j < club[k].length; j++) {
