@@ -30,8 +30,8 @@ var fixtures =
     [krishfc, annihilation],
     [ssfc, rsfootballclub],
     [
-      {shortName: 'TBA', src: 'assests/teams/tba.png', stadium: 'TBA'}, 
-      {shortName: 'TBA', src: 'assests/teams/tba.png', stadium: 'TBA'}
+      {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}, 
+      {shortName: 'TBA', src: 'assests/team/tba.png', stadium: 'TBA'}
     ]
   ]
 ],
