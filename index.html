@@ -27,7 +27,7 @@
             <div class="heading">Teams</div>
             <div class="teams-box"></div>
         </section>
-        <section class="sect" style="display: none" >
+        <section class="sect">
             <div class="violet-border">
                 <div></div>
             </div>
@@ -97,7 +97,7 @@
     for (let i=0; i<teams.length; i++) {
         displayTeams(teams[i]);
     }
-    for (let i=results.length; i<fixtures.length; i++) {
+    for (let i=results.length; i<5; i++) {
         generateMatch(match_box, i, 1, fixtures[1][i][0], fixtures[1][i][1], true, false);
     }
     for (let i=results.length-1; i>=results.length-4; i--) {
