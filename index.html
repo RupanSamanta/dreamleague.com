@@ -97,11 +97,11 @@
     for (let i=0; i<teams.length; i++) {
         displayTeams(teams[i]);
     }
-    /*for (let i=results.length; i<fixtures.length; i++) {
-        generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], true, false);
-    }*/
+    for (let i=results.length; i<fixtures.length; i++) {
+        generateMatch(match_box, i, fixtures[1][i][0], fixtures[1][i][1], true, false);
+    }
     for (let i=results.length-1; i>=results.length-4; i--) {
-        generateMatch(match_box, i, fixtures[i][0], fixtures[i][1], false, false);
+        generateMatch(match_box, i, fixtures[1][i][0], fixtures[1][i][1], false, false);
     }
     displaySponsor(0);
     displayTable(teams, 0);
