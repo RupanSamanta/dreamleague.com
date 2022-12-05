@@ -28,7 +28,11 @@ var fixtures =
     [rsfootballclub, krishfc],
     [ssfc, annihilation],
     [krishfc, annihilation],
-    [ssfc, rsfootballclub]
+    [ssfc, rsfootballclub],
+    [
+      {shortName: 'TBA', src: 'assests/teams/tba.png', stadium: 'TBA'}, 
+      {shortName: 'TBA', src: 'assests/teams/tba.png', stadium: 'TBA'}
+    ]
   ]
 ],
 results = 
