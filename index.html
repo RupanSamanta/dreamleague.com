@@ -73,7 +73,7 @@
         </section>
     </main>
     <footer></footer>
-    <div id="winner">
+    <div id="winner" style="display: none">
         <canvas id="canvas"></canvas>
         <div>
             <img src="assests/logo-horizontal.png" id="win-logo">
@@ -93,7 +93,7 @@
 <script src="fixtures-results/fixtures-results.js"></script>
 <script src="script.js"></script>
 <script src="news/news.js"></script>
-<script src="assests/fireworks.js"></script>
+<!--script src="assests/fireworks.js"></script-->
 <script>  
     footerElements(0);
     headerElements(0);
@@ -108,7 +108,7 @@
     }
     displaySponsor(0);
     displayTable(teams, 0);
-    generateNews(4);
-    close();
+    generateNews(news_list.length < 4 ? news_list.length:4, 0);
+    //close();
 </script>
 </html>
