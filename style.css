@@ -84,6 +84,7 @@ header i {
 .logo-banner {
     background: linear-gradient(to bottom right, var(--green), var(--blue));
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     padding: 20px;
