@@ -1,11 +1,12 @@
-var fixtures = [
+var fixtures =
+[
+  [
     [rsfootballclub, ssfc],
     [annihilation, krishfc],
     [rsfootballclub, annihilation],
     [ssfc, krishfc],
     [krishfc, rsfootballclub],
-    [annihilation, ssfc],
-    
+    [annihilation, ssfc],   
     [ssfc, rsfootballclub],
     [krishfc, annihilation],
     [annihilation, rsfootballclub],
@@ -14,8 +15,25 @@ var fixtures = [
     [ssfc, annihilation],
 
     [rsfootballclub, ssfc]
+  ],
+  [
+    [annihilation, krishfc],
+    [rsfootballclub, ssfc],
+    [ssfc, krishfc],
+    [rsfootballclub, annihilation],
+    [krishfc, rsfootballclub],
+    [annihilation, ssfc],
+    [krishfc, ssfc],
+    [annihilation, rsfootballclub],
+    [rsfootballclub, krishfc],
+    [ssfc, annihilation],
+    [krishfc, annihilation],
+    [ssfc, rsfootballclub]
+  ]
 ],
-results = [
+results = 
+[
+  [
     [1, 0],
     [1, 2],
     [1, 0],
@@ -27,7 +45,8 @@ results = [
     [0, 1],
     [2, 3],
     [2, 0],
-    [0, 3],
-    
+    [0, 3],    
     [4, 1]
+  ],
+  []
 ];
