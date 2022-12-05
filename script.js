@@ -32,7 +32,7 @@ function generateMatch(m, no, s, team1, team2, type, ext) {
     var match = document.createElement('div'),
     div = document.createElement('div');
     match.className = 'match';
-    div.innerHTML = fixtures[s].length == results[s].length ? 'Final' : 'Match '+(no+1);
+    div.innerHTML = no == fixtures[s].length-1 ? 'Final' : 'Match '+(no+1);
     match.appendChild(div);
     div = document.createElement('div');
     div.innerHTML = '<span>'+team1.shortName+'</span>';
