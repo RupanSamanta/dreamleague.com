@@ -1,78 +1,8 @@
 var news_list = [
     {
         type: 'League News',
-        desc: 'Messi’s brace and De Bryune’s screamer helped SSFC defeat Krish FC by 3-2 and secure their first win',
-        url: 'assests/images/messi-celebration.jpg'
-    },
-    {
-        type: 'League News',
-        desc: 'SSFC in search of their first win as they face Krish FC in the fourth match of Dream League',
-        url: 'assests/images/sfc-kfc-banner.jpg'
-    },
-    {
-        type: 'League News',
-        desc: 'Another late goal, another win for RS Football Club as Mahrez striked at last minute',
-        url: 'assests/images/mahrez-celebration.jpg'
-    },
-    {
-        type: 'League News',
-        desc: 'RS Football Club to face Annihilation in the third match of Dream League',
-        url: 'assests/images/rfc-ann-banner1.jpg'
-    },
-    {
-        type: 'League News',
-        desc: 'Jota’s heroic performance helped Krish FC defeat opponent Annihilation at their home ground',
-        url: 'assests/images/diogo-jota-against-ann.jpg'
-    },
-    {
-        type: 'League News',
-        desc: 'Fans favourite Annihilation went down 1-2 against Krish FC in their first match',
-        url: 'assests/images/dybala-against-kfc.jpg'
-    },
-    {
-        type: 'Player News',
-        desc: 'Diogo Jota to play a crucial role for Krish FC',
-        url: 'assests/images/Diogo-Jota.jpg',
-    },
-    {
-        type: 'League News',
-        desc: 'Annihilation to face Krish FC in the second match of Dream League',
-        url: 'assests/images/ann-kfc-banner1.jpg',
-    },
-    {
-        type: 'League News',
-        desc: 'Phil Foden’s late goal snatched a win for RS Football Club against SSFC in the first match',
-        url: 'assests/images/Phil-Foden.jpg',
-    },
-    {
-        type: 'Player News',
-        desc: 'Lionel Messi of SSFC struggle to get a goal against RS Football Club',
-        url: 'assests/images/messi-struggle.jpg',
-    },
-    {
-        type: 'Player News',
-        desc: 'No Haaland Show subbed off early due to leg injury',
-        url: 'assests/images/haaland-injury.jpg',
-    },
-    {
-        type: 'League News',
-        desc: 'RS Football Club to face SSFC in the first match of Dream League',
-        url: 'assests/images/rsfc-ssfc-banner1.jpg',
-    },
-    {
-        type: 'Player News',
-        desc: 'Erling Haaland of RS Football Club can be the highest goalscorer in Dream League',
-        url: 'assests/images/haaland-celebration.jpg',
-    },
-    {
-        type: 'Player News',
-        desc: 'Lionel Messi of SSFC can be a big headache for RS Football Club',
-        url: 'assests/images/messi-image.jpg',
-    },
-    {
-        type: 'Club News',
-        desc: 'Paulo Dybala to lead Annihilation in Dream League',
-        url: 'assests/images/paulo-dybala-image.jpg',
+        desc: 'Dream League Season 2 will start on 6th December Tuesday 2022',
+        url: 'assests/images/dream league season 2 banner.jpg'
     }
 ],
 news_box = document.getElementsByClassName('news-box')[0];
