@@ -1,4 +1,10 @@
 var news_list = [
+    
+    {
+        type: 'League News',
+        desc: 'Annihilation and Krish FC go head to head in the opening match Annihilation will seek for revenge',
+        url: 'assests/images/annihilation-krishfc-banner.jpg'
+    },
     {
         type: 'League News',
         desc: 'Dream League Season 2 fixtures are out Annihilation to face Krish FC in the opening match',
