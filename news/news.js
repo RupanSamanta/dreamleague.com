@@ -1,6 +1,11 @@
 var news_list = [
     {
         type: 'League News',
+        desc: 'Dream League Season 2 fixtures are out Annihilation to face Krish FC in the opening match',
+        url: 'assests/images/fixtures-out.jpg'
+    },
+    {
+        type: 'League News',
         desc: 'Dream League Season 2 will start on 6th December Tuesday 2022',
         url: 'assests/images/dream league season 2 banner.jpg'
     }
