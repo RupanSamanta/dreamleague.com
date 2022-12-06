@@ -266,7 +266,7 @@ player_cleansheet = [
 ]    
 ],
 season1_player_stats = [
-  player_goals[1], player_assists[1], player_cleansheet[1]
+  player_goals[0], player_assists[0], player_cleansheet[0]
 
 ];
 for(let a = 0; a < season1_player_stats.length; a++)
