@@ -34,10 +34,7 @@ function printLineup(hf, hp, af, ap) {
             p = document.createElement('p');
             img = document.createElement('img');
             span = document.createElement('span');      
-            img.src = '../../../assests/player-image/'+url+'.png';
-            img.onerror = ()=> {
-                img.src = '../../../assests/player-image/Photo-Missing.png';
-            }          
+            img.src = '../../../assests/player-image/face/'+url+'.png';         
             span.innerHTML = reduce(hp[count][0]);
             p.appendChild(img);            
             p.appendChild(span);
@@ -62,10 +59,7 @@ function printLineup(hf, hp, af, ap) {
             p = document.createElement('p');
             img = document.createElement('img');
             span = document.createElement('span');         
-            img.src = '../../../assests/player-image/'+url+'.png';
-            img.onerror = ()=> {
-                    img.src = '../../../assests/player-image/Photo-Missing.png';
-            }
+            img.src = '../../../assests/player-image/face/'+url+'.png';
             span.innerHTML = reduce(ap[count][0]);
             p.appendChild(img);
             p.appendChild(span);
@@ -111,35 +105,38 @@ function head_to_head(home, away, info, ind) {
             td2.innerHTML = list[i];
             td3.innerHTML = info.lost;
             var t = Math.floor(info.won/(info.won + info.lost)*100);
-            t = t == 0 ? '50%' : t+'%';
+            t = t.toString() == 'NaN' ? '50%' : t+'%';
             td2.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
         }
         else if (i==2) {
             td1.innerHTML = info.lost;
             td2.innerHTML = list[i];
             td3.innerHTML = info.won;
-            var t = Math.floor(info.lost/(info.won + info.lost)*100)+'%';
+            var t = Math.floor(info.lost/(info.won + info.lost)*100);
+            t = t.toString() == 'NaN' ? '50%' : t+'%';
             td2.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
         }
         else if (i==3) {
             td1.innerHTML = info.gf;
             td2.innerHTML = list[i];
             td3.innerHTML = info.gc;
-            var t = Math.floor(info.gf/(info.gf + info.gc)*100)+'%';
+            var t = Math.floor(info.gf/(info.gf + info.gc)*100);
+            t = t.toString() == 'NaN' ? '50%' : t+'%';
             td2.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
         }
         else if (i==4) {
             td1.innerHTML = info.gc;
             td2.innerHTML = list[i];
             td3.innerHTML = info.gf;
-            var t = Math.floor(info.gc/(info.gf + info.gc)*100)+'%';
+            var t = Math.floor(info.gc/(info.gf + info.gc)*100);
+            t = t.toString() == 'NaN' ? '50%' : t+'%';
             td2.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
         }
         else if (i==5) {
             td1.innerHTML = '';
             td2.innerHTML = list[i]+' '+info.score[info.score.length-1].join('-');
             td3.innerHTML = '';
-            td2.style.background = 'linear-gradient(to right, transparent, var(--grey), transparent)'
+            tr.style.background = 'linear-gradient(to right, transparent, var(--grey), transparent)'
         }
         tr.appendChild(td1);
         tr.appendChild(td2);
@@ -160,21 +157,20 @@ function printStats(array) {
         for (let j = 0; j < array[i].length; j++) {
             td = document.createElement('td');
             td.innerHTML = array[i][j];
-            if (j== 1) {
+            if (j == 1) {
                 var t1, t = 0;
-        if (array[i][0].search('%') != -1) {
-            t1 = array[i][0].substring(0, array[i][0].length-1)*1;
-            t = array[i][2].substring(0, array[i][2].length-1)*1 + t1;
-            t = Math.floor(t1/t*100)+'%';
-        }
-        else
-            t = Math.floor(array[i][0]*1/(array[i][0]*1+array[i][2]*1)*100)+'%';
-            if (t == '0%') t = '50%';
-        td.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
+                if (array[i][0].search('%') != -1) {
+                    t1 = array[i][0].substring(0, array[i][0].length-1)*1;
+                    t = array[i][2].substring(0, array[i][2].length-1)*1 + t1;
+                    t = Math.floor(t1/t*100);
+                }
+                else
+                    t = Math.floor(array[i][0]*1/(array[i][0]*1+array[i][2]*1)*100);
+                t = t.toString() == 'NaN' ? '50%' : t+'%';
+                td.style.background = 'linear-gradient(to right, var(--green) '+t+', var(--yellow) '+t+')';
             }
             tr.appendChild(td);
-        }
-        
+        }        
         table.appendChild(tr);
     }
     document.getElementById('stats').appendChild(table);
@@ -211,8 +207,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.goal.home[i].name;
             for (let j = 0; j < obj.goal.home[i].time.length; j++)
-                str += ' '+obj.goal.home[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += " "+obj.goal.home[i].time[j]+"', ";
+            span.innerHTML += str.substring(0, str.length-2);
             p.appendChild(span);
         }
         div.appendChild(p);
@@ -225,8 +221,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.goal.away[i].name;
             for (let j = 0; j < obj.goal.away[i].time.length; j++)
-                str += ' '+obj.goal.away[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += " "+obj.goal.away[i].time[j]+"', ";
+            span.innerHTML += str.substring(0, str.length-2);
             p.appendChild(span);
         }
         div.appendChild(p);
@@ -243,8 +239,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.assists.home[i].name;
             for (let j = 0; j < obj.assists.home[i].time.length; j++)
-                str += ' '+obj.assists.home[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += " "+obj.assists.home[i].time[j]+"', ";
+            span.innerHTML += str.substring(0, str.length-2);
             p.appendChild(span);
         }
         div.appendChild(p);
@@ -257,8 +253,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.assists.away[i].name;
             for (let j = 0; j < obj.assists.away[i].time.length; j++)
-                str += ' '+obj.assists.away[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += " "+obj.assists.away[i].time[j]+"', ";
+            span.innerHTML += str.substring(0, str.length-2);
             p.appendChild(span);
         }
         div.appendChild(p);
@@ -275,8 +271,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.card.home[i].name;
             for (let j = 0; j < obj.card.home[i].time.length; j++)
-                str += ' '+obj.card.home[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += ' '+obj.card.home[i].time[j];
+            span.innerHTML = str;
             p.appendChild(span);
         }
         div.appendChild(p);
@@ -289,8 +285,8 @@ function printMatchInfo(obj) {
             str = '';
             span.innerHTML = obj.card.away[i].name;
             for (let j = 0; j < obj.card.away[i].time.length; j++)
-                str += ' '+obj.card.away[i].time[j]+',';
-            span.innerHTML += str.substring(0, str.length-1);
+                str += ' '+obj.card.away[i].time[j];
+            span.innerHTML = str;
             p.appendChild(span);
         }
         div.appendChild(p);
