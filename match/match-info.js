@@ -83,13 +83,13 @@ const match_results = [
                 ['Lionel Messi']
             ],
             stats: [
-                ['55%', 'Possession', '45%'],
-                ['7', 'Shots', '3'],
-                ['5', 'Shots on Target', '1'],
-                ['1', 'Corners', '0'],
-                ['80%', 'Pass Completion', '79%'],
+                ['45%', 'Possession', '55%'],
+                ['3', 'Shots', '7'],
+                ['1', 'Shots on Target', '5'],
+                ['0', 'Corners', '1'],
+                ['79%', 'Pass Completion', '80%'],
                 ['1', 'Fouls', '1'], 
-                ['1', 'Yellow Cards', '0'],
+                ['0', 'Yellow Cards', '1'],
                 ['0', 'Red Cards', '0'],
                 ['1', 'Offsides', '1']
             ]
