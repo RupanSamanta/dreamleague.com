@@ -293,10 +293,11 @@ player_cleansheet = [
         value: 1
     }
 ],
+ []
 ],
-seasons = 1,
+season = 1,
 season1_player_stats = [
-  player_goals[seasons], player_assists[seasons], player_cleansheet[seasons]
+  player_goals[season], player_assists[season], player_cleansheet[season]
 
 ];
 for(let a = 0; a < season1_player_stats.length; a++)
