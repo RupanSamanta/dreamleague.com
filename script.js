@@ -52,7 +52,7 @@ function generateMatch(m, no, s, team1, team2, type, ext) {
         </p>`;
         m = m[1];
         match.onclick = function () {
-            window.open('https://rupansamanta.github.io/dreamleague.com/match/season-'+s+'/'+(no+1), '_self');
+            window.open('https://rupansamanta.github.io/dreamleague.com/match/season-'+s+'/'+(no+2), '_self');
         }
     }
     if (ext)
