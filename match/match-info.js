@@ -14,7 +14,7 @@ const match_results = [
             awayTeam: {
                 name: 'Krish FC',
                 shortName: 'KFC',
-                url: 'assests/team/ssfc.png',
+                url: 'assests/team/kfc.png',
                 form: [1, 4, 3, 3]
             },
             score: [1, 3],
