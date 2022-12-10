@@ -100,7 +100,7 @@
     for (let i=results[1].length; i<5/*fixtures[1].length*/; i++) {
         generateMatch(match_box, i, 1, fixtures[1][i][0], fixtures[1][i][1], true, false);
     }
-    for (let i=results[1].length-1; i>=(results[1].length<4 ? results[1].length : 4); i--) {
+    for (let i=results[1].length-1; i>=(results[1].length<4 ? 0:results[1].length-4); i--) {
         generateMatch(match_box, i, 1, fixtures[1][i][0], fixtures[1][i][1], false, false);
     }
     displaySponsor(0);
