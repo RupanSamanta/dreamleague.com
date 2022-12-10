@@ -125,6 +125,20 @@ var player_goals = [
         src: 'assests/player-image/Ruben Dias.png',
         value: 1
     }
+],
+[
+    {
+        name: 'Cristiano Ronaldo',
+        club: 'Krish FC',
+        src: 'assests/player-image/Cristiano Ronaldo.png',
+        value: 1
+    },
+    {
+        name: 'Harry Kane',
+        club: 'Annihilation',
+        src: 'assests/player-image/Harry Kane.png',
+        value: 1
+    }   
 ]
 ],
 player_assists = [
@@ -236,6 +250,21 @@ player_assists = [
         src: 'assests/player-image/Virgil van Djik.png',
         value: 1
     }
+],
+
+[
+    {
+        name: 'Luka Modric',
+        club: 'Krish FC',
+        src: 'assests/player-image/Luka Modric.png',
+        value: 1
+    },
+    {
+        name: 'Mohamed Salah',
+        club: 'Annihilation',
+        src: 'assests/player-image/Mohamed Salah.png',
+        value: 1
+    }
 ]
 ],
 player_cleansheet = [
@@ -263,10 +292,11 @@ player_cleansheet = [
         src: 'assests/player-image/Kasper Schmeichel.png',
         value: 1
     }
-]    
 ],
+],
+seasons = 1,
 season1_player_stats = [
-  player_goals[0], player_assists[0], player_cleansheet[0]
+  player_goals[seasons], player_assists[seasons], player_cleansheet[seasons]
 
 ];
 for(let a = 0; a < season1_player_stats.length; a++)
