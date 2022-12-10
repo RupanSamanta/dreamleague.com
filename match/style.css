@@ -299,6 +299,19 @@
     align-items: center;
     color: #000;
 }
+#field p img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: lightgray;
+    border: solid 2px black;
+}
+#field #home-lineup img {
+    border-color: var(--green);
+}
+#field #away-lineup img {
+    border-color: var(--yellow);
+}
 #field #F {
     background: tomato;
 }
@@ -324,15 +337,15 @@
     border-collapse: collapse;
 }
 #stats-lineup #stats td, #stats-lineup #head-to-head td {
-    width: 25%;
-    padding: 10px 0;
+    width: 20%;
+    padding: 7px 0;
     font-size: 14px;
     text-align: center;
     font-family: 'Light';
-    border-bottom: solid 1px var(--grey);
+    border-bottom: solid 10px white;
 }
 #stats-lineup #stats td:nth-child(2), #stats-lineup #head-to-head td:nth-child(2) {
-    width: 45%;
+    width: 50%;
     font-family: 'Medium';
 }
 #stats-lineup #stats tr:nth-child(1) td, #stats-lineup #head-to-head tr:nth-child(1) td {
