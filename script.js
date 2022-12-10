@@ -11,7 +11,7 @@ links = [
 ['News', 'https://rupansamanta.github.io/dreamleague.com/news/']
 ],
 sponsors = [
-    'DLS_Logo.png',
+    'dls23_logo.png',
     'Google-Logo.png', 'GitHub-Logo.png',
     'Lenovo-Logo.png', 'Airtel-Logo.png',
     'Redmi-Logo.jpg', 'Jio-Digital-Logo.png',
