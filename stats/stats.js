@@ -13,7 +13,7 @@ stats_box = document.getElementsByClassName('stats-box');
 
 for (let k = 0; k < club.length; k++) {
 for (let i = 0; i < stats_teams[0].length; i++) 
-    club[k].push(stats_teams[0][i]);
+    club[k].push(stats_teams[1][i]);
    
 for (let i = 0; i < club[k].length; i++) {
     for (let j = 0; j < club[k].length; j++) {
